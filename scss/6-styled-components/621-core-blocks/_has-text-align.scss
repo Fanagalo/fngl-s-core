@@ -1,0 +1,19 @@
+/**
+ * Text alignment applied in block editor
+ *
+ * @checked with version WordPress 5.7
+ */
+
+.has-text-align-center {
+    text-align: center;
+}
+
+.has-text-align-left {
+    /*rtl:ignore*/
+    text-align: left;
+}
+
+.has-text-align-right {
+    /*rtl:ignore*/
+    text-align: right;
+}

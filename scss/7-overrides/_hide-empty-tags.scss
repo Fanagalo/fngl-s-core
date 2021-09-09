@@ -1,0 +1,7 @@
+/**
+ * The block editor changes HTML comments in empty p-tags. This CSS prevents displaying.
+ */
+
+p:empty {
+    display: none;
+}

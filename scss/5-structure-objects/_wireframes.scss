@@ -1,0 +1,120 @@
+:root {
+    /* header */
+    --header-full-bg: hsl(60, 20%, 83%);
+    --header-area-bg: hsl(60, 33%, 90%);
+    /* menu */
+    --nav-full-bg: var(--fngl-dark-blue);
+    --nav-area-bg: var(--fngl-dark-blue);
+    /* main content */
+    --main-full-bg: transparent;
+    --main-area-bg: var(--general-bg); // leave as is for editor.css, change value in _colors.scss
+    /* sidebar */
+    --sidebar-full-bg: var(--fngl-gradient);
+    --sidebar-area-bg: transparent;
+    /* footer */
+    --footer-full-bg: var(--black);
+    --footer-area-bg: var(--black);
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "nav" "header" "main" "aside" "footer";
+    grid-template-rows: auto auto 1fr auto auto;
+}
+
+@media screen and (min-width: $mq-medium) {
+    body {
+        grid-template-areas: "header" "nav" "main" "aside" "footer";
+    }
+}
+
+@media screen and (min-width: $mq-large) {
+    body {
+        width: 100%;
+        grid-template-columns: auto var(--max-width-container) auto;
+        grid-template-areas: " . header   . " " . nav      . " " . main     . " " . aside    . " " . footer   . ";
+    }
+}
+
+
+/* full width backgrounds */
+
+.header-full-bg,
+.nav-full-bg,
+.breadcrumb-full-bg,
+.main-full-bg,
+.sidebar-full-bg,
+.footer-full-bg {
+    grid-column: 1 / -1;
+    z-index: -1;
+}
+
+
+/* header */
+
+.header-full-bg {
+    grid-row: 1 / 2;
+    background: var(--header-full-bg);
+}
+
+.header-area {
+    grid-area: header;
+    background: var(--header-area-bg);
+}
+
+
+/* navigation / menu */
+
+.nav-full-bg {
+    grid-row: 2 / 3;
+    background: var(--nav-full-bg);
+}
+
+.nav-area {
+    grid-area: nav;
+    background: var(--nav-area-bg);
+}
+
+
+/* main */
+
+.main-full-bg {
+    grid-row: 3 / 4;
+    background: var(--main-full-bg);
+}
+
+.main-area {
+    background: var(--main-area-bg);
+    grid-area: main;
+}
+
+
+/* sidebar */
+
+.sidebar-full-bg {
+    grid-row: 4 / 5;
+    background: var(--sidebar-full-bg);
+    // the following code is useful for a background image
+    // background: url(images/Fanagalo-logo-RGB.png); 
+    // background-size: 100%;
+}
+
+.sidebar-area {
+    background: var(--sidebar-area-bg);
+    grid-area: aside;
+}
+
+
+/* footer */
+
+.footer-full-bg {
+    grid-row: 5 / 6;
+    background: var(--footer-full-bg);
+}
+
+.footer-area {
+    background: var(--footer-area-bg);
+    grid-area: footer;
+}

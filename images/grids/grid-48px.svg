@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2000px" height="48px" viewBox="0 0 2000 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>grid-48px</title>
+    <g id="grid-48px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-4" fill="#00AAFF" x="0" y="0" width="2000" height="1"></rect>
+        <text id="48" font-family="Barlow-Bold, Barlow" font-size="14" font-weight="bold" fill="#00AAFF" fill-opacity="0.300262238">
+            <tspan x="16.074" y="17">48</tspan>
+        </text>
+        <rect id="Rectangle-Copy-17" fill="#E3E3E3" x="0" y="44" width="2000" height="4"></rect>
+        <rect id="Rectangle-Copy-18" fill="#EEEEEE" x="0" y="40" width="2000" height="4"></rect>
+    </g>
+</svg>

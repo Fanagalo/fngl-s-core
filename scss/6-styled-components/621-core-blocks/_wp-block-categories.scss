@@ -1,0 +1,15 @@
+/**
+ * Categories block
+ *
+ * @checked with version WordPress 5.7
+ */
+
+.wp-block-categories.alignleft {
+    /*rtl:ignore*/
+    margin-right: 2em;
+}
+
+.wp-block-categories.alignright {
+    /*rtl:ignore*/
+    margin-left: 2em;
+}

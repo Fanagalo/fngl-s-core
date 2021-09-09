@@ -1,0 +1,214 @@
+/*!
+ Theme Name: Fanagalo underscores core 
+ Theme URI: https://fanagalo.nl
+ Author: Jaap Wiering · Fanagalo
+ Author URI: https://fanagalo.nl
+ Description: Fanagalo core theme based on underscores 
+ Version: 0.78
+ License: GNU General Public License v2 or later
+ Text Domain: fngl_s-core
+/* 
+
+/*
+  Theme coding based on Underscores
+  Structure based on ITCSS
+  Inspired by Sami Keijonen wcnordic2019-master theme https://github.com/samikeijonen/wcnordic-2019
+*/
+
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+# 1. Global variables (ITCSS settings)
+  Config switches
+
+Future expansions: 
+- fonts          => declaration of @font-face 
+- spacing        => spacing variables
+- transitions    => transition variables
+--------------------------------------------------------------*/
+
+@import "1-global-variables/colors";
+@import "1-global-variables/spacing";
+@import "1-global-variables/svg";
+@import "1-global-variables/typography";
+@import "1-global-variables/width";
+
+/*--------------------------------------------------------------
+# 2. Mixins and functions (ITCSS tools)
+  Default mixins and functions
+--------------------------------------------------------------*/
+
+@import "2-mixins-functions/mixins";
+
+/*--------------------------------------------------------------
+# 3. Resets (ITCSS generic)
+  Ground-zero styles (resets, box-sizing, etc.).
+--------------------------------------------------------------*/
+
+@import "3-resets/normalize";
+@import "3-resets/box-sizing";
+
+/*--------------------------------------------------------------
+# 4. HTML Elements
+  Unclassed HTML elements (type selectors).
+--------------------------------------------------------------*/
+
+@import "4-html-elements/html-body";
+@import "4-html-elements/address";
+@import "4-html-elements/blockquote";
+@import "4-html-elements/forms-buttons";
+@import "4-html-elements/headings";
+@import "4-html-elements/hr";
+@import "4-html-elements/links";
+@import "4-html-elements/lists";
+@import "4-html-elements/media";
+@import "4-html-elements/inline-text";
+@import "4-html-elements/paragraph";
+@import "4-html-elements/pre-code";
+@import "4-html-elements/tables";
+@import "4-html-elements/obsolete";
+
+/*--------------------------------------------------------------
+# 5. structure objects (ITCSS objects)
+  Objects & Layouts - Undecorated design patterns.
+
+Future expansions: 
+- animations    => 
+- flow-spacing  => 
+- layouts       => declaration of grid 
+- max-width     => 
+- svg           => 
+--------------------------------------------------------------*/
+
+@import "5-structure-objects/wireframes";
+@import "5-structure-objects/sidebar";
+
+/*--------------------------------------------------------------
+# 6. styled components (ITCSS components)
+  Components - specific UI components, like: accordions, ...
+--------------------------------------------------------------*/
+
+// 601. General components
+@import "6-styled-components/601-general-components/article-classes";
+@import "6-styled-components/601-general-components/gallery";
+@import "6-styled-components/601-general-components/page-classes";
+@import "6-styled-components/601-general-components/pagination";
+@import "6-styled-components/601-general-components/wp-media";
+// 602. Widgets
+@import "6-styled-components/602-widgets/widget-general";
+@import "6-styled-components/602-widgets/widget-html-social-media";
+@import "6-styled-components/602-widgets/widget-nav-menu";
+// 611. Page templates
+@import "6-styled-components/611-page-templates/page"; // TODO should be before _front-page
+@import "6-styled-components/611-page-templates/404";
+@import "6-styled-components/611-page-templates/archive";
+@import "6-styled-components/611-page-templates/front-page";
+@import "6-styled-components/611-page-templates/index";
+@import "6-styled-components/611-page-templates/page-without-title";
+@import "6-styled-components/611-page-templates/search";
+@import "6-styled-components/611-page-templates/single";
+// 612. Section partials = Header, comments, sidebar, footer
+@import "6-styled-components/612-section-parts/header";
+@import "6-styled-components/612-section-parts/navigation";
+@import "6-styled-components/612-section-parts/comments";
+@import "6-styled-components/612-section-parts/footer";
+@import "6-styled-components/612-section-parts/searchform";
+// 613. Content parts = files from template-parts folder
+@import "6-styled-components/613-content-parts/content";
+@import "6-styled-components/613-content-parts/content-archive";
+@import "6-styled-components/613-content-parts/content-none";
+@import "6-styled-components/613-content-parts/content-page";
+@import "6-styled-components/613-content-parts/content-search";
+
+/*--------------------------------------------------------------
+### 621. Core Blocks - editor related styles.
+
+Based on WordPress 5.6 = Block Editor versie 9.2
+Composed on 20201209
+
+Reminder: disable loading default CSS with
+  wp_dequeue_style( 'wp-block-library' );
+  wp_dequeue_style( 'wp-block-library-theme' );
+in functions.php
+--------------------------------------------------------------*/
+
+@import "6-styled-components/621-core-blocks/gutenberg-variables";
+@import "6-styled-components/621-core-blocks/wp-block-audio";
+@import "6-styled-components/621-core-blocks/wp-block-button";
+@import "6-styled-components/621-core-blocks/wp-block-calendar";
+@import "6-styled-components/621-core-blocks/wp-block-categories";
+@import "6-styled-components/621-core-blocks/wp-block-columns";
+@import "6-styled-components/621-core-blocks/wp-block-cover";
+@import "6-styled-components/621-core-blocks/wp-block-code";
+@import "6-styled-components/621-core-blocks/wp-block-custom-logo";
+@import "6-styled-components/621-core-blocks/wp-block-embed";
+@import "6-styled-components/621-core-blocks/wp-block-file";
+@import "6-styled-components/621-core-blocks/wp-block-gallery";
+@import "6-styled-components/621-core-blocks/wp-block-group";
+@import "6-styled-components/621-core-blocks/wp-block-image";
+@import "6-styled-components/621-core-blocks/wp-block-latest-comments";
+@import "6-styled-components/621-core-blocks/wp-block-latest-posts";
+@import "6-styled-components/621-core-blocks/wp-block-media-text";
+// @import "6-styled-components/621-core-blocks/wp-block-navigation"; // not yet implemented in WordPress 5.7
+@import "6-styled-components/621-core-blocks/wp-block-preformatted";
+@import "6-styled-components/621-core-blocks/wp-block-post-author";
+@import "6-styled-components/621-core-blocks/wp-block-post-comments-form";
+@import "6-styled-components/621-core-blocks/wp-block-post-featured-image";
+@import "6-styled-components/621-core-blocks/wp-block-pullquote";
+@import "6-styled-components/621-core-blocks/wp-block-query";
+@import "6-styled-components/621-core-blocks/wp-block-quote";
+@import "6-styled-components/621-core-blocks/wp-block-rss";
+@import "6-styled-components/621-core-blocks/wp-block-search";
+@import "6-styled-components/621-core-blocks/wp-block-separator";
+@import "6-styled-components/621-core-blocks/wp-block-social-links";
+@import "6-styled-components/621-core-blocks/wp-block-spacer";
+@import "6-styled-components/621-core-blocks/wp-block-subhead"; // deprecated in Gutenberg 3.9.0
+@import "6-styled-components/621-core-blocks/wp-block-table";
+@import "6-styled-components/621-core-blocks/wp-block-tag-cloud";
+@import "6-styled-components/621-core-blocks/wp-block-verse";
+@import "6-styled-components/621-core-blocks/wp-block-video";
+@import "6-styled-components/621-core-blocks/has-background";
+@import "6-styled-components/621-core-blocks/has-color";
+@import "6-styled-components/621-core-blocks/has-drop-cap";
+@import "6-styled-components/621-core-blocks/has-font-size--is-text";
+@import "6-styled-components/621-core-blocks/has-text-align";
+@import "6-styled-components/621-core-blocks/has-text-color";
+@import "6-styled-components/621-core-blocks/wp-block-text-columns"; // deprecated in Gutenberg 3.5.0
+@import "6-styled-components/621-core-blocks/unclear-purpose";
+
+/*--------------------------------------------------------------
+# Custom fngl_s-code styles continued
+--------------------------------------------------------------*/
+
+// 622. Custom blocks - editor related styles.
+@import "6-styled-components/622-custom-blocks/caption";
+// @import "6-styled-components/622-custom-blocks/columns";
+@import "6-styled-components/622-custom-blocks/edit-link";
+// 640. Shortcodes
+@import "6-styled-components/640-shortcodes/fngl_recent_posts";
+// 650. Vendor styles
+@import "6-styled-components/650-vendor/breadcrumb_navxt";
+// @import "6-styled-components/650-vendor/cookie-notice";
+
+/*--------------------------------------------------------------
+# 7. overrides (ITCSS trumps)
+  Utilities - Helpers and overrides.
+  The dirty layer, with overrides and !important
+
+Future expansions: 
++ accessibility           =>
++ alignment               =>
+- color-palette           =>
+- font-sizes              =>
+- helpers                 =>
+- max-width               =>
+- prefers-reduced-motion  =>
+- spacing                 =>
+- text                    =>
+--------------------------------------------------------------*/
+
+@import "7-overrides/accessibility";
+@import "7-overrides/align-left-center-right";
+@import "7-overrides/align-wide-full";
+@import "7-overrides/hide-empty-tags";
+@import "7-overrides/hide-full-elements";

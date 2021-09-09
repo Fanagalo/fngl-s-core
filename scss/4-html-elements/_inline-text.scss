@@ -1,0 +1,33 @@
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+
+/* "acronym" is an obsolete element */
+
+abbr,
+abbr[title],
+acronym {
+    border-bottom: none;
+    cursor: help;
+    text-decoration: underline dotted;
+}
+
+mark,
+ins {
+    background: var(--mark-color);
+    text-decoration: none;
+}
+
+s,
+del,
+ins {
+    text-decoration: line-through;
+}
+
+u {
+    text-decoration: red wavy underline;
+}

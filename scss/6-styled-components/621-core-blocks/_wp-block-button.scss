@@ -1,0 +1,198 @@
+/**
+* Button block
+*
+* @checked with version WordPress 5.7
+*/
+
+.wp-block-button__link {
+    color: var(--white);
+    background-color: var(--wp-block-button-color);
+    border: none;
+    border-radius: 1.55em;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.125em;
+    padding: .667em 1.333em;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word
+}
+
+.wp-block-button__link {
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+        color: var(--white)
+    }
+    &.aligncenter {
+        text-align: center
+    }
+    &.alignright {
+        text-align: right
+    }
+}
+
+.wp-block-buttons>.wp-block-button {
+    .has-custom-width {
+        max-width: none;
+    }
+    .has-custom-width .wp-block-button__link {
+        width: 100%;
+    }
+    .wp-block-button__width-25 {
+        width: calc(25% - 0.5em);
+    }
+    .wp-block-button__width-50 {
+        width: calc(50% - 0.5em);
+    }
+    .wp-block-button__width-75 {
+        width: calc(75% - 0.5em);
+    }
+    .wp-block-button__width-100 {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+.wp-block-button,
+.wp-block-button__link.wp-block-button {
+    &.is-style-squared {
+        border-radius: 0
+    }
+    &.no-border-radius {
+        border-radius: 0!important
+    }
+}
+
+.is-style-outline>.wp-block-button__link,
+.wp-block-button__link.is-style-outline {
+    border: 2px solid;
+    &:not(.has-text-color) {
+        color: var(--wp-block-button-color)
+    }
+    &:not(.has-background) {
+        background-color: transparent
+    }
+}
+
+
+/*
+.is-style-outline>.wp-block-button__link:not(.has-background),
+.wp-block-button__link.is-style-outline .wp-block-buttons .wp-block-button {
+display: inline-block;
+margin-right: .5em;
+margin-bottom: .5em
+}
+*/
+
+.wp-block-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* stylelint-disable indentation */
+}
+
+.wp-block-buttons.is-vertical {
+    flex-direction: column;
+}
+
+.wp-block-buttons.is-vertical>.wp-block-button {
+    /*rtl:ignore*/
+    margin-right: 0;
+}
+
+.wp-block-buttons.is-vertical>.wp-block-button:last-child {
+    margin-bottom: 0;
+}
+
+.wp-block-buttons>.wp-block-button {
+    display: inline-block;
+    /*rtl:ignore*/
+    margin-left: 0;
+    /*rtl:ignore*/
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.wp-block-buttons>.wp-block-button:last-child {
+    /*rtl:ignore*/
+    margin-right: 0;
+}
+
+.wp-block-buttons.is-content-justification-left {
+    justify-content: flex-start;
+}
+
+.wp-block-buttons.is-content-justification-left.is-vertical {
+    align-items: flex-start;
+}
+
+.wp-block-buttons.is-content-justification-center {
+    justify-content: center;
+}
+
+.wp-block-buttons.is-content-justification-center.is-vertical {
+    align-items: center;
+}
+
+.wp-block-buttons.is-content-justification-right {
+    justify-content: flex-end;
+}
+
+.wp-block-buttons.is-content-justification-right>.wp-block-button {
+    /*rtl:ignore*/
+    margin-left: 0.5em;
+    /*rtl:ignore*/
+    margin-right: 0;
+}
+
+.wp-block-buttons.is-content-justification-right>.wp-block-button:first-child {
+    /*rtl:ignore*/
+    margin-left: 0;
+}
+
+.wp-block-buttons.is-content-justification-right.is-vertical {
+    align-items: flex-end;
+}
+
+.wp-block-buttons.is-content-justification-space-between {
+    justify-content: space-between;
+}
+
+.wp-block-buttons.aligncenter {
+    text-align: center;
+}
+
+.wp-block-buttons.alignleft .wp-block-button {
+    /*rtl:ignore*/
+    margin-left: 0;
+    /*rtl:ignore*/
+    margin-right: 0.5em;
+}
+
+.wp-block-buttons.alignleft .wp-block-button:last-child {
+    /*rtl:ignore*/
+    margin-right: 0;
+}
+
+.wp-block-buttons.alignright .wp-block-button {
+    /*rtl:ignore*/
+    margin-right: 0;
+    /*rtl:ignore*/
+    margin-left: 0.5em;
+}
+
+.wp-block-buttons.alignright .wp-block-button:first-child {
+    /*rtl:ignore*/
+    margin-left: 0;
+}
+
+.wp-block-buttons:not(.is-content-justification-space-between, .is-content-justification-right, .is-content-justification-left, .is-content-justification-center) .wp-block-button.aligncenter {
+    /* stylelint-enable indentation */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    width: 100%;
+}

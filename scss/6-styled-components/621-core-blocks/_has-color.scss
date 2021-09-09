@@ -1,0 +1,66 @@
+/**
+ * Colors applied in block editor
+ *
+ * @checked with version WordPress 5.7
+ *
+ * WP 5.7 calls upon following background-colors and colors (not included): 
+ * pale-pink, vivid-red, luminous-vivid-orange, luminous-vivid-amber, light-green-cyan, vivid-green-cyan, pale-cyan-blue, vivid-cyan-blue, vivid-purple, white, very-light-gray, cyan-bluish-gray, very-dark-gray, black
+ * 
+ * gradients (not included): 
+ * vivid-cyan-blue-to-vivid-purple-gradient, vivid-green-cyan-to-vivid-cyan-blue-gradient, light-green-cyan-to-vivid-green-cyan-gradient, luminous-vivid-amber-to-luminous-vivid-orange-gradient, luminous-vivid-orange-to-vivid-red-gradient, very-light-gray-to-cyan-bluish-gray-gradient, cool-to-warm-spectrum-gradient, blush-light-purple-gradient, blush-bordeaux-gradient, purple-crush-gradient, luminous-dusk-gradient, hazy-dawn-gradient, pale-ocean-gradient, electric-grass-gradient, subdued-olive-gradient, atomic-cream-gradient, nightshade-gradient, midnight-gradient, 
+ */
+
+:root {
+    /* background solid colors */
+    .has-fngl-dark-blue-background-color {
+        background-color: var(--fngl-dark-blue);
+    }
+    .has-fngl-light-blue-background-color {
+        background-color: var(--fngl-light-blue);
+    }
+    .has-fngl-purple-background-color {
+        background-color: var(--fngl-purple);
+    }
+    .has-fngl-magenta-background-color {
+        background-color: var(--fngl-magenta);
+    }
+    .has-fngl-dark-red-background-color {
+        background-color: var(--fngl-dark-red);
+    }
+    .has-fngl-red-background-color {
+        background-color: var(--fngl-red);
+    }
+    .has-fngl-yellow-background-color {
+        background-color: var(--fngl-yellow);
+    }
+    /* spot solid colors */
+    .has-fngl-dark-blue-color {
+        color: var(--fngl-dark-blue);
+    }
+    .has-fngl-light-blue-color {
+        color: var(--fngl-light-blue);
+    }
+    .has-fngl-purple-color {
+        color: var(--fngl-purple);
+    }
+    .has-fngl-magenta-color {
+        color: var(--fngl-magenta);
+    }
+    .has-fngl-dark-red-color {
+        color: var(--fngl-dark-red);
+    }
+    .has-fngl-red-color {
+        color: var(--fngl-red);
+    }
+    .has-fngl-yellow-color {
+        color: var(--fngl-yellow);
+    }
+    /* gradients */
+    .has-fanagalo-gradient-background {
+        background: linear-gradient(100deg, var(--fngl-dark-blue) 0%, var(--fngl-light-blue) 17%, var(--fngl-purple) 33%, var(--fngl-magenta) 50%, var(--fngl-dark-red) 67%, var(--fngl-red) 83%, var(--fngl-yellow) 100%);
+    }
+}
+
+:root .has-link-color a {
+    color: var(--a-color, #00e);
+}

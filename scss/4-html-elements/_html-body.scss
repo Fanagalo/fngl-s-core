@@ -1,0 +1,20 @@
+html {
+    font-size: 16px; // defines value of rem 
+}
+
+
+/* 
+    body is the default for typography and background
+    essential layout in:
+    - _mixins.scss 
+    - _article-classes.scss
+*/
+
+body {
+    color: var(--paragraph-color);
+    font-family: var(--ff-sans);
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-paragraph);
+    background: var(--general-bg); // fallback if no custom background color is defined
+}

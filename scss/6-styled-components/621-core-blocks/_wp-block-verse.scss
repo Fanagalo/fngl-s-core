@@ -1,0 +1,13 @@
+/**
+ * Verse block
+ *
+ * @since WordPress 5.7 CSS code provided
+ * @checked with version WordPress 5.7
+ *
+ */
+
+pre.wp-block-verse {
+    font-family: inherit;
+    overflow: auto;
+    white-space: pre-wrap;
+}

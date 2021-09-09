@@ -1,0 +1,47 @@
+:root {
+    --archive-article-bg: var(--white);
+}
+
+.category main,
+.tag main,
+.archive main {
+    margin: 0;
+}
+
+.archive-description {
+    @include text-width;
+}
+
+
+/* the following layout is obsolete
+
+.archive .archive-overview {
+    display: grid;
+    gap: 1em 2%;
+}
+
+.archive article {
+    background-color: var(--archive-article-bg);
+    align-self: start;
+}
+
+@media screen and (min-width: $mq-extra-small) {
+    .archive .archive-overview {
+        grid-template-columns: repeat(2, 49%);
+    }
+    .archive .archive-overview header,
+    .archive .archive-overview nav {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: $mq-medium) {
+    .archive .archive-overview {
+        grid-template-columns: repeat(3, 32%);
+    }
+    .archive .archive-overview header,
+    .archive .archive-overview nav {
+        grid-column: span 3;
+    }
+}
+*/

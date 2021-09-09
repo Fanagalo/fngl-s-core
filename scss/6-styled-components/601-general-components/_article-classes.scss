@@ -1,0 +1,120 @@
+.main-area {
+    padding: 0;
+}
+
+.sticky {
+    display: block;
+}
+
+.article {
+    margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.article-header {
+    margin-bottom: 1.75rem;
+}
+
+.article-title {
+    @include title-styling;
+    @include text-width;
+    margin-bottom: 0;
+}
+
+
+/* meta sections */
+
+.article-meta {
+    @include text-width;
+}
+
+.post-categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        background-color: var(--eiklinde-paars);
+        display: inline;
+        margin-right: .25rem;
+        padding: 0.125rem .5rem;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: var(--fs-xs);
+            color: var(--diap-color);
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.article-post-date {
+    font-size: var(--fs-s);
+    color: var(--grey-dark);
+    text-transform: lowercase;
+}
+
+.article-tags a {
+    @include small-button;
+    background-color: var(--grey-lightest);
+    color: var(--paragraph-color);
+    margin-left: .5rem;
+    &:hover {
+        background-color: var(--grey-light);
+        color: var(--diap-color);
+    }
+}
+
+.post-thumbnail {
+    display: block;
+    @include text-width; // TODO: proper solution?
+}
+
+
+/* limit width of article elements */
+
+.article-content> {
+    p,
+    ul,
+    ol,
+    dl {
+        @include paragraph-styling;
+        @include text-width;
+    }
+    /*
+    h1 {
+        @include title-styling
+    }
+    */
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include heading-styling;
+        @include text-width;
+    }
+    figcaption {
+        @include text-width;
+    }
+    figure {
+        @include figure-width;
+    }
+}

@@ -1,0 +1,131 @@
+:root {
+    --editor-background-color: var(--white);
+}
+
+
+/* Background color of Block Editor */
+
+.edit-post-layout .interface-interface-skeleton__content {
+    background-color: var(--editor-background-color);
+}
+
+
+/* overrides default (system) editor font */
+
+.editor-styles-wrapper {
+    p,
+    ol,
+    ul {
+        @include paragraph-styling;
+        word-wrap: break-word;
+    }
+}
+
+
+/* Post title. */
+
+.editor-post-title__block .editor-post-title__input {
+    @include title-styling;
+    font-size: var(--fs-title);
+    line-height: var(--lh-xl);
+    min-height: auto;
+    text-align: left;
+}
+
+
+/* Paragraph needs more specifity. */
+
+.wp-block-paragraph {
+    --fs-lg: 32px;
+    font-size: var(--fs-lg);
+}
+
+
+/* Main column width. */
+
+.wp-block {
+    // --max-w-md: 600px;
+    // max-width: calc(var(--max-w-md) + 2rem);
+    max-width: var(--max-width-text);
+}
+
+
+/* Width of "wide" blocks. */
+
+.wp-block[data-align="wide"] {
+    // --max-w-md: 900px;
+    // max-width: var(--max-w-lg);
+    max-width: var(--max-width-container);
+}
+
+
+/* Width of "full" blocks. */
+
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+
+/* For now we need this for overwriting Core line-height.
+* Note that headings line-height is overwritten in elements/headings.css.
+
+.editor-rich-text__tinymce:not(.wp-block-cover-text):not(.wp-block-subhead):not(h2):not(h3) {
+    line-height: var(--lh-md);
+}
+*/
+
+
+/* Search styles. */
+
+.wp-block-search__input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.wp-block-search__label {
+    font-weight: 700;
+}
+
+.wp-block-search__button {
+    /*    @mixin button-block;
+@mixin global-transition;
+&:hover,
+&:active,
+&:focus {
+@mixin button-block-hover;
+}
+&:focus {
+@mixin global-focus-styles;
+} */
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.wp-block-search__button .wp-block-search__button-rich-text {
+    padding: 0;
+}
+
+
+/* Code. */
+
+.wp-block-code textarea {
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+
+/* FNGL: remove bullets in header right side panel */
+
+.components-panel__header.interface-complementary-area-header.edit-post-sidebar__panel-tabs>ul {
+    list-style: none;
+    margin: 0;
+}
+
+#adminmenu {
+    ul,
+    ol {
+        margin: 0;
+    }
+}

@@ -1,0 +1,17 @@
+/**
+ * Variables found in Gutenberg blocks 
+ *
+ * @checked with version WordPress 5.7
+ *
+ * TODO: not sure if this doesn't interfere with other CSS
+ */
+
+.has-drop-cap:not(:focus)::first-letter {
+    float: left; //TODO: find alternative for float
+    font-size: 8.4em;
+    line-height: 0.68;
+    font-weight: 100;
+    margin: 0.05em 0.1em 0 0;
+    text-transform: uppercase;
+    font-style: normal;
+}

@@ -1,0 +1,218 @@
+<?php
+/**
+ * Fanagalo_underscores_core functions and definitions
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ * @package Fanagalo_underscores_core
+ */
+
+// Disable use XML-RPC
+add_filter( 'xmlrpc_enabled', '__return_false' );
+
+if ( ! function_exists( 'fngl_s_core_setup' ) ) :
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
+	 */
+	function fngl_s_core_setup() {
+		/*
+		 * Make theme available for translation.
+		 * Translations can be filed in the /languages/ directory.
+		 * If you're building a theme based on Healthmasters theme by Fanagalo, use a find and replace
+		 * to change 'fngl_s-core' to the name of your theme in all the template files.
+		 */
+		load_theme_textdomain( 'fngl_s-core', get_template_directory() . '/languages' );
+
+		add_theme_support( 'automatic-feed-links' ); // Add default posts and comments RSS feed links to head.
+	
+		// Let WordPress manage the document title.
+		// By adding theme support, we declare that this theme does not use a
+		// hard-coded <title> tag in the document head, and expect WordPress to
+		// provide it for us.
+		add_theme_support( 'title-tag' );
+
+		// Enable support for Post Thumbnails on posts and pages.
+		// @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+		add_theme_support( 'post-thumbnails' );
+
+		// This theme uses wp_nav_menu() in one location.
+		register_nav_menus( array(
+			'primary' => esc_html__( 'Primary', 'fngl_s-core' ),
+		) );
+
+		// Switch default core markup for search form, comment form, and comments to output valid HTML5.
+		add_theme_support( 'html5', array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		) );
+
+		// Set up the WordPress core custom background feature.
+		add_theme_support( 'custom-background', apply_filters( 'fngl_s_core_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		) ) );
+
+		add_theme_support( 'customize-selective-refresh-widgets' ); // Add theme support for selective refresh for widgets.
+
+		// Add support for core custom logo.
+		//* @link https://codex.wordpress.org/Theme_Logo
+		add_theme_support( 'custom-logo', array(
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
+			'flex-height' => true,
+		) );
+		
+		add_theme_support( 'align-wide' ); // Register support for Gutenberg wide images in your theme
+
+		add_theme_support( 'responsive-embeds' ); // Add theme support for responsive embeds.
+
+		// custom color palette */
+		add_theme_support( 'editor-color-palette', array(
+			array('name' => __( 'warm yellow', 'fngl_s-core' ), 'slug' => 'warm-yellow',  'color' => '#ffcc00',),
+			array('name' => __( 'orange',      'fngl_s-core' ), 'slug' => 'orange', 	   'color' => '#ee8833',),
+			array('name' => __( 'red',         'fngl_s-core' ), 'slug' => 'red', 		   'color' => '#dd4444',),
+			array('name' => __( 'purple',      'fngl_s-core' ), 'slug' => 'purple', 	   'color' => '#bb44bb',),
+			array('name' => __( 'deep blue',   'fngl_s-core' ), 'slug' => 'deep-blue',    'color' => '#5555cc',),
+			array('name' => __( 'sky blue',    'fngl_s-core' ), 'slug' => 'sky-blue', 	   'color' => '#55aaff',),
+			array('name' => __( 'dark green',  'fngl_s-core' ), 'slug' => 'dark-green',   'color' => '#44aa77',),
+			array('name' => __( 'fresh green', 'fngl_s-core' ), 'slug' => 'fresh-green',  'color' => '#aacc44',),
+			array('name' => __( 'deep black',  'fngl_s-core' ), 'slug' => 'deep-black',   'color' => '#000000',),
+			array('name' => __( 'text black',  'fngl_s-core' ), 'slug' => 'text-black',   'color' => '#333333',),
+			array('name' => __( 'neutral gray','fngl_s-core' ), 'slug' => 'neutral-gray', 'color' => '#aaaaaa',),
+			array('name' => __( 'light gray',  'fngl_s-core' ), 'slug' => 'light-gray',   'color' => '#dddddd',),
+			array('name' => __( 'white',       'fngl_s-core' ), 'slug' => 'white', 	   'color' => '#ffffff',),
+		) );
+			
+		// Block Editor Font Sizes, from Twentytwenty theme
+		add_theme_support(
+			'editor-font-sizes',
+			array(
+				array(
+					'name'      => _x( 'Small', 'Name of the small font size in the block editor', 'fngl_s-core' ),
+					'shortName' => _x( 'S', 'Short name of the small font size in the block editor.', 'fngl_s-core' ),
+					'size'      => 18,
+					'slug'      => 'small',
+				),
+				array(
+					'name'      => _x( 'Regular', 'Name of the regular font size in the block editor', 'fngl_s-core' ),
+					'shortName' => _x( 'M', 'Short name of the regular font size in the block editor.', 'fngl_s-core' ),
+					'size'      => 21,
+					'slug'      => 'normal',
+				),
+				array(
+					'name'      => _x( 'Large', 'Name of the large font size in the block editor', 'fngl_s-core' ),
+					'shortName' => _x( 'L', 'Short name of the large font size in the block editor.', 'fngl_s-core' ),
+					'size'      => 26.25,
+					'slug'      => 'large',
+				),
+				array(
+					'name'      => _x( 'Larger', 'Name of the larger font size in the block editor', 'fngl_s-core' ),
+					'shortName' => _x( 'XL', 'Short name of the larger font size in the block editor.', 'fngl_s-core' ),
+					'size'      => 32,
+					'slug'      => 'larger',
+				),
+			)
+		);
+
+		add_theme_support( 'editor-styles' );
+
+	}
+endif;
+add_action( 'after_setup_theme', 'fngl_s_core_setup' );
+
+/**
+ * JW 20200614: this function looks not useful, consider to delete
+ * 
+ * Set the content width in pixels, based on the theme's design and stylesheet.
+ *
+ * Priority 0 to make it available to lower priority callbacks.
+ *
+ * @global int $content_width
+ */    /*
+function fngl_s_core_content_width() {
+	// This variable is intended to be overruled from themes.
+	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
+	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+	$GLOBALS['content_width'] = apply_filters( 'fngl_s_core_content_width', 640 );
+}
+add_action( 'after_setup_theme', 'fngl_s_core_content_width', 0 );
+*/
+
+/**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function fngl_s_core_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'fngl_s-core' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'fngl_s-core' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'fngl_s_core_widgets_init' );
+
+
+/**
+ * Enqueue block editor styles.
+ */
+function fngl_s_core_editor_styles() {
+	wp_enqueue_style( 'fngl_s-core', get_theme_file_uri( 'editor.css' ), array(), wp_get_theme()->get( 'Version' ), 'all' );
+}
+add_action( 'enqueue_block_editor_assets', 'fngl_s_core_editor_styles', 1, 1 );
+
+
+/**
+ * Enqueue styles and scripts
+ */
+function fngl_s_core_scripts() {
+
+	// Replace default FRONTEND styles with custom styles
+		// Overwrite core BLOCK styles with empty styles
+		wp_dequeue_style( 'wp-block-library' );
+		wp_deregister_style( 'wp-block-library' );
+		wp_register_style( 'wp-block-library', '' );
+
+		// Overwrite core THEME styles with empty styles
+		wp_dequeue_style( 'wp-block-library-theme' );
+		wp_deregister_style( 'wp-block-library-theme' );
+		wp_register_style( 'wp-block-library-theme', '' );
+
+		// Enable custom frontend styles; 'style' refers to style.css
+		wp_enqueue_style( 'style', get_stylesheet_uri() );
+
+	// Script for responsive mobile menu
+	// source: https://www.customyou.nl/responsive-menu-wordpress-clean-tutorial/
+		wp_enqueue_script( 'nav-menu.js', get_template_directory_uri() . '/js/nav-menu.js', array('jquery'), '20151111', true );
+
+	// Helps with accessibility for keyboard only users. Original from _s
+		wp_enqueue_script( 'fngl_s-core-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	// Makes threads in comments. Original from _s
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+			wp_enqueue_script( 'comment-reply' );
+		}
+	}
+add_action( 'wp_enqueue_scripts', 'fngl_s_core_scripts' );
+
+/* Add functions from directory "inc" */ 
+require get_template_directory() . '/inc/custom-header.php';  // Implement the Custom Header feature.
+require get_template_directory() . '/inc/template-tags.php';  // Custom template tags for this theme.
+require get_template_directory() . '/inc/template-functions.php';  // Functions which enhance the theme by hooking into WordPress.
+require get_template_directory() . '/inc/customizer.php';  // Customizer additions.
+
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require get_template_directory() . '/inc/jetpack.php';  // Load Jetpack compatibility file.
+}
+
+?>

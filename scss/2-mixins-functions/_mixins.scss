@@ -1,0 +1,82 @@
+@mixin paragraph-styling {
+    font-family: var(--ff-serif);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-paragraph);
+    line-height: var(--lh-paragraph);
+    color: var(--paragraph-color);
+    margin-top: 0;
+    margin-bottom: var(--lh-paragraph);
+}
+
+@mixin heading-styling {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-bold);
+    color: var(--heading-color);
+    clear: both;
+    word-break: break-word;
+}
+
+@mixin title-styling {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-bold);
+    color: var(--heading-color);
+    clear: both;
+    word-break: break-word;
+}
+
+@mixin text-width {
+    width: calc( 100vw - (var(--min-margin-text) * 2));
+    max-width: var(--max-width-text);
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $mq-small) {
+        &.alignwide, &.alignfull {
+            max-width: calc( var(--max-width-container) - (var(--min-margin-text) * 2));
+        }
+    }
+    @media screen and (min-width: $mq-large) {
+        &.alignfull {
+            max-width: calc( 100vw - (var(--vert-scrollbar) / 2));
+            margin-left: calc(( 0px - ( 100vw - var(--max-width-container)) / 2) + var(--min-margin-text));
+            margin-right: calc(( 0px - ( 100vw - var(--max-width-container)) / 2) + var(--min-margin-text));
+        }
+    }
+}
+
+@mixin figure-width {
+    width: 100vw;
+    max-width: var(--max-width-text);
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $mq-small) {
+        &.alignwide, &.alignfull {
+            max-width: var(--max-width-container);
+        }
+    }
+    @media screen and (min-width: $mq-large) {
+        &.alignfull {
+            max-width: calc( 100vw - (var(--vert-scrollbar) / 2));
+            margin-left: calc( 0px - ( 100vw - var(--max-width-container)) / 2);
+            margin-right: calc( 0px - ( 100vw - var(--max-width-container)) / 2);
+        }
+    }
+}
+
+@mixin small-button {
+    font-size: var(--fs-xxs);
+    font-weight: var(--fw-sub);
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 2px .5rem 2px .5rem;
+    line-height: var(--lh-xxs);
+}
+
+@mixin svg-icon ($css-variable, $width, $height) {
+    content: "";
+    display: inline-block;
+    width: $width;
+    height: $height;
+    background: no-repeat left var($css-variable);
+    background-size: cover;
+}

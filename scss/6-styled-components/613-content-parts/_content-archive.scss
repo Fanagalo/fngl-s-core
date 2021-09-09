@@ -1,0 +1,78 @@
+:root {
+    --archive-post-border: 1px solid var(--grey-lighter);
+    --archive-post-background: var(--white);
+    --archive-post-hover-shadow: 0 0 12px var(--eiklinde-paars);
+}
+
+.archive-post {
+    margin-bottom: 2rem;
+    border: var(--archive-post-border);
+    background-color: var(--archive-post-background);
+    a {
+        text-decoration: none
+    }
+    .archive-post-text {
+        padding: .5rem 1rem 1rem 1rem;
+    }
+}
+
+@media screen and (min-width: $mq-medium) {
+    .archive-post {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        .archive-post-image {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+        .archive-post-text {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 1;
+            p {
+                width: 100%;
+            }
+        }
+    }
+    .archive-post:nth-child(even) {
+        .archive-post-image {
+            grid-column: -2 / span 1;
+            // below a hack to eliminate an occasional white line on the right of an image
+            margin-right: -.5px;
+        }
+        .archive-post-text {
+            grid-column: 1 / span 2;
+        }
+    }
+}
+
+.archive-post-image {
+    background-color: var(--primary-lightest);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.archive-post-title {
+    margin: .5rem 0 0 0;
+}
+
+.archive-post-excerpt {
+    a& {
+        color: var(--paragraph-color)
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.archive-post-readmore {
+    @include small-button;
+    background-color: var(--eiklinde-rood);
+    &:hover {
+        background-color: var(--tertiary-dark);
+    }
+    a& {
+        color: var(--diap-color);
+    }
+}

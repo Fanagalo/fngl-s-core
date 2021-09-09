@@ -1,0 +1,29 @@
+/**
+ * this codes is used by plugin FNGL Shortcodes
+ * most CSS in _content-archive.php
+*/
+
+:root {
+    --fngl-recent-posts-hover-shadow: 0 0 12px var(--eiklinde-paars);
+}
+
+// list of articles
+.fngl-recent-posts {
+    max-width: 100%;
+    .archive-post {
+        margin: 0 0 2rem 0;
+        &:hover {
+            box-shadow: var(--fngl-recent-posts-hover-shadow);
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        a .archive-post-excerpt {
+            color: var(--paragraph-color);
+        }
+    }
+}
+
+.fngl-recent-post-empty {
+    text-align: center;
+}

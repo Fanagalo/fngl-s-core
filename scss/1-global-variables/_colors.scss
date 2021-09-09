@@ -1,0 +1,62 @@
+:root {
+    /* brand colors */
+    --fngl-dark-blue: hsl(220, 100%, 20%);
+    --fngl-light-blue: hsl(196, 100%, 47%);
+    --fngl-purple: hsl(290, 75%, 27%);
+    --fngl-magenta: hsl(324, 100%, 47%);
+    --fngl-dark-red: hsl(351, 64%, 37%);
+    --fngl-red: hsl(0, 100%, 41%);
+    --fngl-yellow: hsl(50, 100%, 50%);
+    --fngl-gradient: linear-gradient(100deg, var(--fngl-dark-blue) 0%, var(--fngl-light-blue) 17%, var(--fngl-purple) 33%, var(--fngl-magenta) 50%, var(--fngl-dark-red) 67%, var(--fngl-red) 83%, var(--fngl-yellow) 100%);
+    /* color scheme */
+    // these must be HexRGB, RGB(A) or HSL(A); CSS Variables won't work
+    $primary-color: hsl(196, 100%, 47%);
+    $secondary-color: hsl(0, 0%, 50%);
+    $tertiary-color: hsl(324, 100%, 47%);
+    $grey-middle: hsl(0, 0%, 50%);
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --tertiary-color: #{$tertiary-color};
+    --white: #ffffff;
+    --black: #000000;
+    /* background colors */
+    --general-bg: var(--white);
+    // --general-bg: url('images/grids/grid-4px-28px.svg');
+    /* text colors */
+    --paragraph-color: hsl(0, 0%, 20%);
+    --heading-color: hsl(0, 0%, 27%);
+    --a-color: hsl(225, 100%, 60%);
+    --a-hover-color: hsl(240, 56%, 30%);
+    /* interaction colors */
+    --error-color: #d00;
+    --warning-color: #f90;
+    --mark-color: #fd0;
+    --success-color: #0b0;
+    /* primary tints - add white or black */
+    --primary-lightest: #{mix(white, $primary-color, 75%)};
+    --primary-lighter: #{mix(white, $primary-color, 50%)};
+    --primary-light: #{mix(white, $primary-color, 25%)};
+    --primary-dark: #{mix(black, $primary-color, 25%)};
+    --primary-darker: #{mix(black, $primary-color, 50%)};
+    --primary-darkest: #{mix(black, $primary-color, 75%)};
+    /* secondary tints - change lightness */
+    --secondary-lightest: #{change-color($secondary-color, $lightness: 95%)};
+    --secondary-lighter: #{change-color($secondary-color, $lightness: 80%)};
+    --secondary-light: #{change-color($secondary-color, $lightness: 70%)};
+    --secondary-middle-light: #{change-color($secondary-color, $lightness: 60%)};
+    --secondary-middle: #{change-color($secondary-color, $lightness: 50%)};
+    --secondary-middle-dark: #{change-color($secondary-color, $lightness: 40%)};
+    --secondary-dark: #{change-color($secondary-color, $lightness: 30%)};
+    --secondary-darker: #{change-color($secondary-color, $lightness: 20%)};
+    --secondary-darkest: #{change-color($secondary-color, $lightness: 10%)};
+    /* greys */
+    --grey-lightest: #{mix(white, $grey-middle, 75%)};
+    --grey-lighter: #{mix(white, $grey-middle, 50%)};
+    --grey-light: #{mix(white, $grey-middle, 25%)};
+    --grey-middle: #{$grey-middle};
+    --grey-dark: #{mix(black, $grey-middle, 25%)};
+    --grey-darker: #{mix(black, $grey-middle, 50%)};
+    --grey-darkest: #{mix(black, $grey-middle, 75%)};
+    /* synonyms */
+    --diap-color: var(--white);
+}

@@ -1,0 +1,31 @@
+/* supporting code for wide and full width */
+
+.alignfull,
+.alignwide,
+.alignfull img {
+    width: calc(100vw - 4rem);
+}
+
+// var(--max-width-text) + marge (2*2rem) = 600px + (4+16px) = 664px
+@media only screen and (min-width: 664px) {
+    .alignwide,
+    .alignfull {
+        margin-left: calc( 2rem - ( 100vw - var(--max-width-text)) / 2);
+    }
+}
+
+@media only screen and (min-width: $mq-large) {
+    .alignwide {
+        width: calc(var(--max-width-container) - 4rem);
+        margin-left: calc( 2rem - ( ( var(--max-width-container) - var(--max-width-text)) / 2));
+        margin-right: initial;
+    }
+}
+
+
+/*
+.alignfull :not(img),
+.alignwide :not(img) {
+    padding: 0 1rem;
+}
+*/

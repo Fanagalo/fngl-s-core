@@ -1,0 +1,17 @@
+pre {
+    background: #eee;
+    line-height: var(--lh-s);
+    margin-bottom: var(--whiteline);
+    max-width: 100vw;
+    overflow: auto;
+    padding: 1rem;
+}
+
+pre,
+code,
+kbd,
+tt,
+var {
+    font-family: var(--ff-mono);
+    font-size: var(--fs-s);
+}

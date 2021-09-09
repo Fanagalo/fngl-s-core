@@ -1,0 +1,18 @@
+:root {
+    --comments-area-bg: hsl(0, 0%, 93%);
+    --comments-form-area-bg: hsl(0, 0%, 85%);
+}
+
+.comments-area {
+    background-color: var(--comments-area-bg);
+}
+
+.comments-form-area {
+    background-color: var(--comments-form-area-bg);
+    padding: 1rem;
+}
+
+.site-comments {
+    margin: 0 auto;
+    max-width: var(--max-width-text);
+}

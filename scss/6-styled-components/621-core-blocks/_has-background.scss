@@ -1,0 +1,19 @@
+/**
+ * Has background, apply padding to text elements
+ *
+ * @checked with version WordPress 5.7
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p {
+    &.has-background {
+        padding: var(--has-background-padding);
+    }
+}

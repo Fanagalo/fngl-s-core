@@ -1,0 +1,34 @@
+/* 
+ * Media queries 
+ *
+ * Use EM only, REM doesn't work well, PX has a11y issues
+ * Core CSS variables don't work in media queries, so use SCSS variables instead
+ * Smallest anticipated device width 374px // TODO 320px would be ideal
+ * 
+ */
+
+:root {
+    --mq-extra-small: 28em; // 448px;
+    --mq-small: 37.5em; // 600px
+    --mq-medium: 50em; // 800px
+    --mq-large: 65em; // 1040px
+}
+
+$mq-extra-small: 28em;
+$mq-small: 37.5em; // value from Gutenberg
+$mq-medium: 50em; // slightly changed value from Gutenberg
+$mq-large: 65em;
+
+/* 
+ * Text width values
+ */
+
+:root {
+    --max-width-text: 37.5rem; // 600px
+    --max-width-container: 65rem; // 1040px
+    --min-margin-text: 1rem; // 16px
+    --vert-scrollbar: 16px // space required for vertical scrollbar on desktop
+}
+
+$max-width-text: 37.5rem;
+$max-width-container: 65rem;

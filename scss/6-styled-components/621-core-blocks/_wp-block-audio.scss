@@ -1,0 +1,15 @@
+/**
+ * Audio block
+ *
+ * @checked with version WordPress 5.7
+ */
+
+.wp-block-audio figcaption {
+    // margin-top: .5em;
+    // margin-bottom: 1em
+}
+
+.wp-block-audio audio {
+    width: 100%;
+    min-width: 300px
+}
