@@ -8,7 +8,7 @@
     background: #f7f7f7;
     border: 1px solid #ccc;
     padding: 0.375em 0.625em;
-    color: #32373c;
+    color: var(--wp-block-button-color);
     margin-left: 0.625em;
     word-break: normal;
 }
@@ -31,7 +31,7 @@
 .wp-block-search .wp-block-search__input {
     flex-grow: 1;
     min-width: 3em;
-    border: 1px solid #949494;
+    border: 1px solid var(--wp-block-search-border);
 }
 .wp-block-search.wp-block-search__button-only .wp-block-search__button {
     margin-left: 0;
@@ -39,7 +39,7 @@
 .wp-block-search.wp-block-search__button-inside
     .wp-block-search__inside-wrapper {
     padding: 4px;
-    border: 1px solid #949494;
+    border: 1px solid var(--wp-block-search-border);
 }
 .wp-block-search.wp-block-search__button-inside
     .wp-block-search__inside-wrapper

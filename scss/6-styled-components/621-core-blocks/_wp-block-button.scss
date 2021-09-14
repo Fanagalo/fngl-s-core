@@ -5,8 +5,8 @@
 */
 
 .wp-block-button__link {
-    color: #fff;
-    background-color: #32373c;
+    color: var(--white);
+    background-color: var(--wp-block-button-color);
     border-radius: 9999px;
     box-shadow: none;
     cursor: pointer;
@@ -22,7 +22,7 @@
 .wp-block-button__link:focus,
 .wp-block-button__link:active,
 .wp-block-button__link:visited {
-    color: #fff;
+    color: var(--white);
 }
 .wp-block-button__link.aligncenter {
     text-align: center;

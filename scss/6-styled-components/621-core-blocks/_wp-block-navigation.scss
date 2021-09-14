@@ -551,8 +551,8 @@
 .wp-block-navigation:not(.has-background)
     .wp-block-navigation__container
     .wp-block-navigation-link__container {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--black);
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -672,8 +672,8 @@
 
 .wp-block-navigation:not(.has-background)
     .wp-block-navigation__responsive-container.is-menu-open {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .wp-block-navigation__responsive-container-open,
@@ -806,8 +806,8 @@ html.has-modal-open {
 .wp-block-navigation:not(.has-background)
     .wp-block-navigation__container
     .wp-block-home-link__container {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--black);
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .wp-block-navigation:not(.has-background)

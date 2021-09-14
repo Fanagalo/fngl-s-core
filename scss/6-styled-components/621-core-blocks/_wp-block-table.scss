@@ -4,6 +4,14 @@
  * @checked with version WordPress 5.7
  */
 
+:root {
+    --wp-block-table-light-gray: #f3f4f5;
+    --wp-block-table-pale-green: #e9fbe5;
+    --wp-block-table-pale-blue: #e7f5fe;
+    --wp-block-table-pale-pink: #fcf0ef;
+    --wp-block-table-stripes: #f0f0f0;
+}
+
 .wp-block-table {
     margin: 0 0 1em 0;
     overflow-x: auto;
@@ -35,45 +43,45 @@
     word-break: break-word;
 }
 .wp-block-table .has-subtle-light-gray-background-color {
-    background-color: #f3f4f5;
+    background-color: var(--wp-block-table-light-gray);
 }
 .wp-block-table .has-subtle-pale-green-background-color {
-    background-color: #e9fbe5;
+    background-color: var(--wp-block-table-pale-green);
 }
 .wp-block-table .has-subtle-pale-blue-background-color {
-    background-color: #e7f5fe;
+    background-color: var(--wp-block-table-pale-blue);
 }
 .wp-block-table .has-subtle-pale-pink-background-color {
-    background-color: #fcf0ef;
+    background-color: var(--wp-block-table-pale-pink);
 }
 .wp-block-table.is-style-stripes {
     border-spacing: 0;
     border-collapse: inherit;
     background-color: transparent;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--wp-block-table-stripes);
 }
 .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-    background-color: #f0f0f0;
+    background-color: var(--wp-block-table-stripes);
 }
 .wp-block-table.is-style-stripes.has-subtle-light-gray-background-color
     tbody
     tr:nth-child(odd) {
-    background-color: #f3f4f5;
+    background-color: var(--wp-block-table-light-gray);
 }
 .wp-block-table.is-style-stripes.has-subtle-pale-green-background-color
     tbody
     tr:nth-child(odd) {
-    background-color: #e9fbe5;
+    background-color: var(--wp-block-table-pale-green);
 }
 .wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color
     tbody
     tr:nth-child(odd) {
-    background-color: #e7f5fe;
+    background-color: var(--wp-block-table-pale-blue);
 }
 .wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color
     tbody
     tr:nth-child(odd) {
-    background-color: #fcf0ef;
+    background-color: var(--wp-block-table-pale-pink);
 }
 .wp-block-table.is-style-stripes th,
 .wp-block-table.is-style-stripes td {

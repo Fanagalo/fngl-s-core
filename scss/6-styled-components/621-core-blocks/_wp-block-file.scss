@@ -18,9 +18,9 @@
     margin-bottom: 1em;
 }
 .wp-block-file .wp-block-file__button {
-    background: #32373c;
+    background: var(--wp-block-button-color);
     border-radius: 2em;
-    color: #fff;
+    color: var(--white);
     font-size: 0.8em;
     padding: 0.5em 1em;
 }
@@ -32,7 +32,7 @@
 .wp-block-file a.wp-block-file__button:focus,
 .wp-block-file a.wp-block-file__button:active {
     box-shadow: none;
-    color: #fff;
+    color: var(--white);
     opacity: 0.85;
     text-decoration: none;
 }

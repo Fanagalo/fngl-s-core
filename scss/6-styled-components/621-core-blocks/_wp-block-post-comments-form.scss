@@ -62,7 +62,7 @@
 }
 .wp-block-post-comments textarea,
 .wp-block-post-comments input {
-    border: 1px solid #949494;
+    border: 1px solid var(--wp-block-search-border);
 }
 
 .wp-block-post-comments-form input[type="submit"] {
