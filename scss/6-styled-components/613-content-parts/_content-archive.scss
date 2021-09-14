@@ -9,10 +9,10 @@
     border: var(--archive-post-border);
     background-color: var(--archive-post-background);
     a {
-        text-decoration: none
+        text-decoration: none;
     }
     .archive-post-text {
-        padding: .5rem 1rem 1rem 1rem;
+        padding: 0.5rem 1rem 1rem 1rem;
     }
 }
 
@@ -36,7 +36,7 @@
         .archive-post-image {
             grid-column: -2 / span 1;
             // below a hack to eliminate an occasional white line on the right of an image
-            margin-right: -.5px;
+            margin-right: -0.5px;
         }
         .archive-post-text {
             grid-column: 1 / span 2;
@@ -54,16 +54,16 @@
 }
 
 .archive-post-title {
-    margin: .5rem 0 0 0;
+    margin: 0.5rem 0 0 0;
 }
 
 .archive-post-excerpt {
-    a& {
-        color: var(--paragraph-color)
-    }
     p {
         margin: 0;
     }
+}
+a.archive-post-excerpt {
+    color: var(--paragraph-color);
 }
 
 .archive-post-readmore {
@@ -72,7 +72,7 @@
     &:hover {
         background-color: var(--tertiary-dark);
     }
-    a& {
-        color: var(--diap-color);
-    }
+}
+a.archive-post-readmore {
+    color: var(--diap-color);
 }

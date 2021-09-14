@@ -1,74 +1,54 @@
-03/12/21 10:43:48: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 128, at column 0
-03/12/21 10:45:48: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:47:49: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:48:54: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:49:54: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:51:55: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:53:55: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:54:56: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:55:56: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:56:16: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:56:16: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:57:18: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:58:43: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 10:59:43: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:01:43: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:02:43: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:02:53: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:02:54: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:02:58: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:02:59: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:03:01: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:03:02: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:03:22: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:03:23: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:03:26: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:03:26: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:03:48: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:03:50: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:04:28: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 130, at column 0
-03/12/21 11:06:28: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/9-editor-only/_editor-specific.scss on line 33, at column 0
-03/12/21 11:58:00: editor.scss - parse error: failed at `margin-left: calc( 100% - var(--max-width-container)) / 2);` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/2-mixins-functions/_mixins.scss on line 43, at column 13
-03/12/21 11:58:00: style.scss - parse error: failed at `margin-left: calc( 100% - var(--max-width-container)) / 2);` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/2-mixins-functions/_mixins.scss on line 43, at column 13
-03/12/21 11:58:09: editor.scss - parse error: failed at `margin-left: calc( 100vw - var(--max-width-container)) / 2);` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/2-mixins-functions/_mixins.scss on line 43, at column 13
-03/12/21 11:58:09: style.scss - parse error: failed at `margin-left: calc( 100vw - var(--max-width-container)) / 2);` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/2-mixins-functions/_mixins.scss on line 43, at column 13
-03/13/21 4:24:26: editor.scss - unexpected }: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/2-mixins-functions/_mixins.scss on line 55, at column 0
-03/13/21 4:24:26: style.scss - unexpected }: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/2-mixins-functions/_mixins.scss on line 55, at column 0
-03/13/21 4:46:30: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/2-mixins-functions/_mixins.scss on line 71, at column 0
-03/13/21 4:46:30: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/2-mixins-functions/_mixins.scss on line 71, at column 0
-03/21/21 4:04:35: editor.scss - parse error: failed at `border: 2px solid &:not(.has-text-color) {` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/6-styled-components/621-core-blocks/_wp-block-button.scss on line 71, at column 5
-03/21/21 4:04:35: style.scss - parse error: failed at `border: 2px solid &:not(.has-text-color) {` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/6-styled-components/621-core-blocks/_wp-block-button.scss on line 71, at column 5
-03/21/21 4:08:36: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/6-styled-components/621-core-blocks/_wp-block-button.scss on line 197, at column 0
-03/21/21 4:08:36: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/6-styled-components/621-core-blocks/_wp-block-button.scss on line 197, at column 0
-03/21/21 4:10:36: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/6-styled-components/621-core-blocks/_wp-block-button.scss on line 193, at column 0
-03/21/21 4:10:36: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/6-styled-components/621-core-blocks/_wp-block-button.scss on line 193, at column 0
-09/09/21 12:05:03: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:05:03: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:05:10: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:05:10: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:05:10: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:05:10: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:05:47: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:05:47: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:06:12: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:06:12: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:06:50: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:06:50: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:06:54: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:06:54: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:05: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:05: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:13: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:13: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:22: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:22: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:30: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:30: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:32: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:07:32: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:08:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:08:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:10:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:10:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:12:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
-09/09/21 12:12:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:26:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:26:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:28:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:28:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:30:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:30:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:32:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:32:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:34:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:34:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:36:34: editor.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:36:34: style.scss - unclosed block: failed at `` /Users/jaap/Dropbox/FANAGALO/Local Sites/fngl-s-core/app/public/wp-content/themes/fngl_s-core/scss/1-global-variables/_width.scss on line 35, at column 0
+09/09/21 12:38:34: editor.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:38:34: style.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss style.scss on line 140
+#1 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:40:34: editor.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 56, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:40:34: style.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 56, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss style.scss on line 140
+#1 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:42:34: editor.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:42:34: style.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss style.scss on line 140
+#1 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:44:34: editor.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:44:34: style.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss style.scss on line 140
+#1 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:50:02: editor.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:50:02: style.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss style.scss on line 140
+#1 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:52:03: editor.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44
+09/09/21 12:52:03: style.scss - Incompatible units px and em.: 6-styled-components/621-core-blocks/_wp-block-columns.scss on line 46, at column 1
+Call Stack:
+#0 import 6-styled-components/621-core-blocks/_wp-block-columns.scss style.scss on line 140
+#1 import 6-styled-components/621-core-blocks/_wp-block-columns.scss editor.scss on line 44

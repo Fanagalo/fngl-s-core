@@ -1,7 +1,7 @@
 /**
- * Variables found in Gutenberg blocks 
+ * Drop caps 
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  *
  * TODO: not sure if this doesn't interfere with other CSS
  */
@@ -15,3 +15,11 @@
     text-transform: uppercase;
     font-style: normal;
 }
+
+.has-drop-cap:not(:focus)::first-letter {
+  float: left;
+
+p.has-drop-cap.has-background {
+  overflow: hidden;
+}
+

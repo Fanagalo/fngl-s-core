@@ -2,10 +2,11 @@
  * Variables found in Gutenberg blocks 
  *
  * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
 
 :root {
-    --has-background-padding: 1.25rem 2.375rem; //  // used in _has-background.scss and _wp-block-columns.scss
+    --has-background-padding: 1.25rem 2.375rem; // used in _has-background.scss and _wp-block-columns.scss
     --wp-block-button-color: #32373c; // used in _wp-block-button.scss
     --wp-block-calendar-color: #ddd; // used in _wp-block-calendar.scss
     --wp-block-calendar-text: #40464d; // used in _wp-block-calendar.scss

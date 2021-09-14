@@ -2,6 +2,8 @@
  * Colors applied in block editor
  *
  * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
+
  *
  * WP 5.7 calls upon following background-colors and colors (not included): 
  * pale-pink, vivid-red, luminous-vivid-orange, luminous-vivid-amber, light-green-cyan, vivid-green-cyan, pale-cyan-blue, vivid-cyan-blue, vivid-purple, white, very-light-gray, cyan-bluish-gray, very-dark-gray, black
@@ -57,7 +59,16 @@
     }
     /* gradients */
     .has-fanagalo-gradient-background {
-        background: linear-gradient(100deg, var(--fngl-dark-blue) 0%, var(--fngl-light-blue) 17%, var(--fngl-purple) 33%, var(--fngl-magenta) 50%, var(--fngl-dark-red) 67%, var(--fngl-red) 83%, var(--fngl-yellow) 100%);
+        background: linear-gradient(
+            100deg,
+            var(--fngl-dark-blue) 0%,
+            var(--fngl-light-blue) 17%,
+            var(--fngl-purple) 33%,
+            var(--fngl-magenta) 50%,
+            var(--fngl-dark-red) 67%,
+            var(--fngl-red) 83%,
+            var(--fngl-yellow) 100%
+        );
     }
 }
 

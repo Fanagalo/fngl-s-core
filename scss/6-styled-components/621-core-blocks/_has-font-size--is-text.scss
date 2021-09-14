@@ -1,32 +1,19 @@
 /**
  * Font sizes applied in block editor
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  *
  * created in /inc/custom-color-font-blocks.php
  * specified in function: small, normal, large, larger
+ * other sizes: regular, medium, huge
  */
 
-.is-small-text {
-    font-size: var(--fs-s);
-}
-
-.is-regular-text {
-    font-size: var(--fs-paragraph);
-}
-
-.is-large-text {
-    font-size: var(--fs-l);
-}
-
-.is-larger-text {
-    font-size: var(--fs-xl);
-}
-
+.is-small-text,
 .has-small-font-size {
     font-size: var(--fs-s);
 }
 
+.is-regular-text,
 .has-regular-font-size,
 .has-normal-font-size {
     font-size: var(--fs-paragraph);
@@ -36,10 +23,12 @@
     font-size: var(--fs-m);
 }
 
+.is-large-text,
 .has-large-font-size {
     font-size: var(--fs-l);
 }
 
+.is-larger-text,
 .has-larger-font-size,
 .has-huge-font-size {
     font-size: var(--fs-xl);

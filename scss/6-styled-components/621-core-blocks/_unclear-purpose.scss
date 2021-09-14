@@ -1,37 +1,33 @@
 /**
  * Unclear what these element exactly do
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
 
 :root {
     --wp-admin-theme-color: #007cba;
     --wp-admin-theme-color-darker-10: #006ba1;
-    --wp-admin-theme-color-darker-20: #005a87
+    --wp-admin-theme-color-darker-20: #005a87;
 }
 
 #start-resizable-editor-section {
-    display: none
+    display: none;
 }
 
 .block-editor-image-alignment-control__row .components-base-control__field {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
-
-.block-editor-image-alignment-control__row .components-base-control__field .components-base-control__label {
-    margin-bottom: 0
+.block-editor-image-alignment-control__row
+    .components-base-control__field
+    .components-base-control__label {
+    margin-bottom: 0;
 }
 
 #end-resizable-editor-section {
-    display: none
+    display: none;
 }
-
-.aligncenter {
-    clear: both;
-}
-
 
 /* @since probably WordPress 5.7
  * this probably makes HTML comments into extra white lines

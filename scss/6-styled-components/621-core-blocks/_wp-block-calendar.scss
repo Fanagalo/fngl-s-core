@@ -1,38 +1,32 @@
 /**
  * Calendar block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
 
 .wp-block-calendar {
-    text-align: center
+    text-align: center;
 }
-
-.wp-block-calendar tbody td,
-.wp-block-calendar th {
-    padding: .25em;
-    border: 1px solid var(--wp-block-calendar-color)
+.wp-block-calendar th,
+.wp-block-calendar tbody td {
+    padding: 0.25em;
+    border: 1px solid #ddd;
 }
-
 .wp-block-calendar tfoot td {
-    border: none
+    border: none;
 }
-
 .wp-block-calendar table {
     width: 100%;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
-
 .wp-block-calendar table th {
     font-weight: 400;
-    background: var(--wp-block-calendar-color);
+    background: #ddd;
 }
-
 .wp-block-calendar a {
-    text-decoration: underline
+    text-decoration: underline;
 }
-
-.wp-block-calendar table caption,
-.wp-block-calendar table tbody {
-    color: var(--wp-block-calendar-text);
+.wp-block-calendar table tbody,
+.wp-block-calendar table caption {
+    color: #40464d;
 }

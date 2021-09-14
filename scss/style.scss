@@ -4,7 +4,7 @@
  Author: Jaap Wiering · Fanagalo
  Author URI: https://fanagalo.nl
  Description: Fanagalo core theme based on underscores 
- Version: 0.78
+ Version: 0.79
  License: GNU General Public License v2 or later
  Text Domain: fngl_s-core
 /* 
@@ -133,13 +133,21 @@ in functions.php
 --------------------------------------------------------------*/
 
 @import "6-styled-components/621-core-blocks/gutenberg-variables";
+@import "6-styled-components/621-core-blocks/has-background";
+@import "6-styled-components/621-core-blocks/has-color";
+@import "6-styled-components/621-core-blocks/has-drop-cap";
+@import "6-styled-components/621-core-blocks/has-font-size--is-text";
+@import "6-styled-components/621-core-blocks/has-text-align";
+@import "6-styled-components/621-core-blocks/has-text-color";
+@import "6-styled-components/621-core-blocks/screen-reader-text";
+@import "6-styled-components/621-core-blocks/unclear-purpose";
 @import "6-styled-components/621-core-blocks/wp-block-audio";
 @import "6-styled-components/621-core-blocks/wp-block-button";
 @import "6-styled-components/621-core-blocks/wp-block-calendar";
 @import "6-styled-components/621-core-blocks/wp-block-categories";
+@import "6-styled-components/621-core-blocks/wp-block-code";
 @import "6-styled-components/621-core-blocks/wp-block-columns";
 @import "6-styled-components/621-core-blocks/wp-block-cover";
-@import "6-styled-components/621-core-blocks/wp-block-code";
 @import "6-styled-components/621-core-blocks/wp-block-custom-logo";
 @import "6-styled-components/621-core-blocks/wp-block-embed";
 @import "6-styled-components/621-core-blocks/wp-block-file";
@@ -149,11 +157,13 @@ in functions.php
 @import "6-styled-components/621-core-blocks/wp-block-latest-comments";
 @import "6-styled-components/621-core-blocks/wp-block-latest-posts";
 @import "6-styled-components/621-core-blocks/wp-block-media-text";
-// @import "6-styled-components/621-core-blocks/wp-block-navigation"; // not yet implemented in WordPress 5.7
-@import "6-styled-components/621-core-blocks/wp-block-preformatted";
+@import "6-styled-components/621-core-blocks/wp-block-navigation";
 @import "6-styled-components/621-core-blocks/wp-block-post-author";
 @import "6-styled-components/621-core-blocks/wp-block-post-comments-form";
+@import "6-styled-components/621-core-blocks/wp-block-post-excerpt";
 @import "6-styled-components/621-core-blocks/wp-block-post-featured-image";
+@import "6-styled-components/621-core-blocks/wp-block-post-title";
+@import "6-styled-components/621-core-blocks/wp-block-preformatted";
 @import "6-styled-components/621-core-blocks/wp-block-pullquote";
 @import "6-styled-components/621-core-blocks/wp-block-query";
 @import "6-styled-components/621-core-blocks/wp-block-quote";
@@ -165,16 +175,9 @@ in functions.php
 @import "6-styled-components/621-core-blocks/wp-block-subhead"; // deprecated in Gutenberg 3.9.0
 @import "6-styled-components/621-core-blocks/wp-block-table";
 @import "6-styled-components/621-core-blocks/wp-block-tag-cloud";
+@import "6-styled-components/621-core-blocks/wp-block-text-columns"; // deprecated in Gutenberg 3.5.0
 @import "6-styled-components/621-core-blocks/wp-block-verse";
 @import "6-styled-components/621-core-blocks/wp-block-video";
-@import "6-styled-components/621-core-blocks/has-background";
-@import "6-styled-components/621-core-blocks/has-color";
-@import "6-styled-components/621-core-blocks/has-drop-cap";
-@import "6-styled-components/621-core-blocks/has-font-size--is-text";
-@import "6-styled-components/621-core-blocks/has-text-align";
-@import "6-styled-components/621-core-blocks/has-text-color";
-@import "6-styled-components/621-core-blocks/wp-block-text-columns"; // deprecated in Gutenberg 3.5.0
-@import "6-styled-components/621-core-blocks/unclear-purpose";
 
 /*--------------------------------------------------------------
 # Custom fngl_s-code styles continued

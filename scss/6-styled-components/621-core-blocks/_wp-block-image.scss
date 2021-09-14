@@ -1,43 +1,36 @@
 /**
  * Image block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
 
 .wp-block-image {
-    margin-bottom: 1em;
+    margin: 0 0 1em 0;
 }
-
 .wp-block-image img {
     max-width: 100%;
 }
-
 .wp-block-image:not(.is-style-rounded) img {
     border-radius: inherit;
 }
-
 .wp-block-image.aligncenter {
     text-align: center;
 }
-
 .wp-block-image.alignfull img,
 .wp-block-image.alignwide img {
     width: 100%;
 }
-
 .wp-block-image .alignleft,
 .wp-block-image .alignright,
 .wp-block-image .aligncenter {
     display: table;
 }
-
-.wp-block-image .alignleft>figcaption,
-.wp-block-image .alignright>figcaption,
-.wp-block-image .aligncenter>figcaption {
+.wp-block-image .alignleft > figcaption,
+.wp-block-image .alignright > figcaption,
+.wp-block-image .aligncenter > figcaption {
     display: table-caption;
     caption-side: bottom;
 }
-
 .wp-block-image .alignleft {
     /*rtl:ignore*/
     float: left;
@@ -47,7 +40,6 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
-
 .wp-block-image .alignright {
     /*rtl:ignore*/
     float: right;
@@ -57,26 +49,22 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
-
 .wp-block-image .aligncenter {
     margin-left: auto;
     margin-right: auto;
 }
-
 .wp-block-image figcaption {
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
-
 .wp-block-image.is-style-rounded img {
     border-radius: 9999px;
 }
-
 .wp-block-image.is-style-circle-mask img {
     border-radius: 9999px;
 }
-
-@supports ((-webkit-mask-image: none) or (mask-image: none)) or (-webkit-mask-image: none) {
+@supports ((-webkit-mask-image: none) or (mask-image: none)) or
+    (-webkit-mask-image: none) {
     .wp-block-image.is-style-circle-mask img {
         /* stylelint-disable */
         -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');
@@ -91,4 +79,8 @@
         mask-position: center;
         border-radius: 0;
     }
+}
+
+.wp-block-image figure {
+    margin: 0;
 }

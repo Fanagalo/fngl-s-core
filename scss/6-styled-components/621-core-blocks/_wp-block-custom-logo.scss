@@ -3,6 +3,9 @@
  *
  * @since WordPress 5.6
  * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
+ *
+ * class .wp-block-custom-logo renamed to .wp-block-site-logo
  */
 
 .wp-block-custom-logo {
@@ -14,5 +17,22 @@
 }
 
 .wp-block-custom-logo.is-style-rounded img {
+    border-radius: 9999px;
+}
+
+.wp-block-site-logo {
+    line-height: 0;
+}
+.wp-block-site-logo a {
+    display: inline-block;
+}
+.wp-block-site-logo.is-default-size img {
+    width: 120px;
+    height: auto;
+}
+.wp-block-site-logo .aligncenter {
+    display: table;
+}
+.wp-block-site-logo.is-style-rounded img {
     border-radius: 9999px;
 }

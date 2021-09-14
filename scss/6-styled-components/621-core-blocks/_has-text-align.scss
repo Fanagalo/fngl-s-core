@@ -1,7 +1,7 @@
 /**
  * Text alignment applied in block editor
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
 
 .has-text-align-center {
@@ -16,4 +16,24 @@
 .has-text-align-right {
     /*rtl:ignore*/
     text-align: right;
+}
+
+.aligncenter {
+    clear: both;
+}
+
+.items-justified-left {
+    justify-content: flex-start;
+}
+
+.items-justified-center {
+    justify-content: center;
+}
+
+.items-justified-right {
+    justify-content: flex-end;
+}
+
+.items-justified-space-between {
+    justify-content: space-between;
 }
