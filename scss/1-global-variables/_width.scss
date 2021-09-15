@@ -3,7 +3,7 @@
  *
  * Use EM only, REM doesn't work well, PX has a11y issues
  * Core CSS variables don't work in media queries, so use SCSS variables instead
- * Smallest anticipated device width 374px // TODO 320px would be ideal
+ * Smallest anticipated device width 374px // TODO: 320px would be ideal
  * 
  */
 
@@ -14,15 +14,11 @@
     --mq-large: 65em; // 1040px
 }
 
-/*
-    TODO: mixed media query calculation with EM and PX are incompatible 
-*/
 $mq-extra-small: 28em;
-// $mq-small: 37.5em; // value from Gutenberg
-$mq-small: 600px; // value from Gutenberg
-// $mq-medium: 50em; // slightly changed value from Gutenberg
-$mq-medium: 800px; // slightly changed value from Gutenberg
+$mq-small: 37.5em; // value from Gutenberg
+$mq-medium: 50em; // slightly changed value from Gutenberg
 $mq-large: 65em;
+$mq-reduction: 0.05em; // reduction value for media query flips
 
 /* 
  * Text width values

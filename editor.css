@@ -133,7 +133,7 @@ the typographical rhythm is 28px (1.75rem)
  *
  * Use EM only, REM doesn't work well, PX has a11y issues
  * Core CSS variables don't work in media queries, so use SCSS variables instead
- * Smallest anticipated device width 374px // TODO 320px would be ideal
+ * Smallest anticipated device width 374px // TODO: 320px would be ideal
  * 
  */
 :root {
@@ -167,110 +167,92 @@ the typographical rhythm is 28px (1.75rem)
  * Variables found in Gutenberg blocks 
  *
  * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Audio block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
 * Button block
 *
-* @checked with version WordPress 5.7
-*/
-  /*
-.is-style-outline>.wp-block-button__link:not(.has-background),
-.wp-block-button__link.is-style-outline .wp-block-buttons .wp-block-button {
-display: inline-block;
-margin-right: .5em;
-margin-bottom: .5em
-}
+* @checked with version WordPress 5.8.1
 */
   /**
  * Calendar block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Categories block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Colums block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
-  /* 
-TODO: The SCSS variable with the minus 1px calculation causes an error
-*/
-  /*
-@media (min-width: $mq-small) and (max-width: $mq-medium - 1px) {
-    .wp-block-column:not(:only-child) {
-        flex-basis: calc(50% - 1em) !important;
-        flex-grow: 0;
-    }
-    .wp-block-column:nth-child(2n) {
-        margin-left: 2em;
-    }
-}
-*/
   /**
  * Cover block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Code block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Custom Logo block
  *
  * @since WordPress 5.6
  * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
+ *
+ * class .wp-block-custom-logo renamed to .wp-block-site-logo
  */
   /**
  * Embed block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * File block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
 * Gallery block
 *
-* @checked with version WordPress 5.7
+* @checked with version WordPress 5.8.1
 */
   /**
  * Group block
  *
  * @since WordPress 5.6
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Image block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Latest Comments block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Latest Posts block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Media Text block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /*
 * Here we here not able to use a mobile first CSS approach.
@@ -284,18 +266,19 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
  *
  * @checked with version WordPress 5.7
  * @since WordPress 5.7 CSS is provided
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Post author block
  *
  * @since WordPress 5.6
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Post commments form block
  *
  * @since WordPress 5.7
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Featured image block
@@ -308,43 +291,50 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   /**
  * Pullquote block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Query block
  *
  * @since WordPress 5.7
  * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
+ *
+ * Classes
+ * - .wp-block-post-template
+ * - .wp-block-query-loop
+ * - .wp-block-query-pagination
+ *
  */
   /**
  * Quote block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * RSS block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Search block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Separator block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Social links block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Spacer block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Subhead block
@@ -361,43 +351,31 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
  * Tag cloud block
  *
  * @since WordPress 5.7
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Verse block
  *
  * @since WordPress 5.7 CSS code provided
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  *
  */
   /**
  * Video block
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
-  /* remarked out for fngl_s-code theme
-
- .wp-block-video {
-    margin-left: 0;
-    margin-right: 0;
-}
-*/
-  /* remarked out for fngl_s-code theme
-
-.wp-block-video figcaption {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-}
-*/
   /**
  * Has background, apply padding to text elements
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Colors applied in block editor
  *
  * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
+
  *
  * WP 5.7 calls upon following background-colors and colors (not included): 
  * pale-pink, vivid-red, luminous-vivid-orange, luminous-vivid-amber, light-green-cyan, vivid-green-cyan, pale-cyan-blue, vivid-cyan-blue, vivid-purple, white, very-light-gray, cyan-bluish-gray, very-dark-gray, black
@@ -406,41 +384,42 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
  * vivid-cyan-blue-to-vivid-purple-gradient, vivid-green-cyan-to-vivid-cyan-blue-gradient, light-green-cyan-to-vivid-green-cyan-gradient, luminous-vivid-amber-to-luminous-vivid-orange-gradient, luminous-vivid-orange-to-vivid-red-gradient, very-light-gray-to-cyan-bluish-gray-gradient, cool-to-warm-spectrum-gradient, blush-light-purple-gradient, blush-bordeaux-gradient, purple-crush-gradient, luminous-dusk-gradient, hazy-dawn-gradient, pale-ocean-gradient, electric-grass-gradient, subdued-olive-gradient, atomic-cream-gradient, nightshade-gradient, midnight-gradient, 
  */
   /**
- * Variables found in Gutenberg blocks 
+ * Drop caps 
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  *
  * TODO: not sure if this doesn't interfere with other CSS
  */
   /**
  * Font sizes applied in block editor
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  *
  * created in /inc/custom-color-font-blocks.php
  * specified in function: small, normal, large, larger
+ * other sizes: regular, medium, huge
  */
   /**
  * Text alignment applied in block editor
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Text color applied in block editor
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Text columns block
  *
  * @deprecated in Gutenberg 3.5.0
  * @see Columns
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /**
  * Unclear what these element exactly do
  *
- * @checked with version WordPress 5.7
+ * @checked with version WordPress 5.8.1
  */
   /* @since probably WordPress 5.7
  * this probably makes HTML comments into extra white lines
@@ -728,7 +707,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .article-title.alignwide, .editor-styles-wrapper .article-title.alignfull {
     max-width: calc( var(--max-width-container) - (var(--min-margin-text) * 2));
   }
@@ -749,7 +728,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .article-meta.alignwide, .editor-styles-wrapper .article-meta.alignfull {
     max-width: calc( var(--max-width-container) - (var(--min-margin-text) * 2));
   }
@@ -819,7 +798,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .post-thumbnail.alignwide, .editor-styles-wrapper .post-thumbnail.alignfull {
     max-width: calc( var(--max-width-container) - (var(--min-margin-text) * 2));
   }
@@ -858,7 +837,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .article-content > p.alignwide, .editor-styles-wrapper .article-content > p.alignfull,
   .editor-styles-wrapper .article-content > ul.alignwide,
   .editor-styles-wrapper .article-content > ul.alignfull,
@@ -897,7 +876,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .article-content > h2.alignwide, .editor-styles-wrapper .article-content > h2.alignfull,
   .editor-styles-wrapper .article-content > h3.alignwide,
   .editor-styles-wrapper .article-content > h3.alignfull,
@@ -930,7 +909,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .article-content > figcaption.alignwide, .editor-styles-wrapper .article-content > figcaption.alignfull {
     max-width: calc( var(--max-width-container) - (var(--min-margin-text) * 2));
   }
@@ -951,7 +930,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .article-content > figure.alignwide, .editor-styles-wrapper .article-content > figure.alignfull {
     max-width: var(--max-width-container);
   }
@@ -1019,7 +998,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .page-title.alignwide, .editor-styles-wrapper .page-title.alignfull {
     max-width: calc( var(--max-width-container) - (var(--min-margin-text) * 2));
   }
@@ -1049,7 +1028,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .editor-styles-wrapper .nav-links.alignwide, .editor-styles-wrapper .nav-links.alignfull {
     max-width: calc( var(--max-width-container) - (var(--min-margin-text) * 2));
   }
@@ -1128,14 +1107,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 .editor-styles-wrapper :root {
   --has-background-padding: 1.25rem 2.375rem;
   --wp-block-button-color: #32373c;
-  --wp-block-calendar-color: #ddd;
-  --wp-block-calendar-text: #40464d;
   --wp-block-author-date: #555;
-  --wp-block-table-light-gray: #f3f4f5;
-  --wp-block-table-pale-green: #e9fbe5;
-  --wp-block-table-pale-blue: #e7f5fe;
-  --wp-block-table-pale-pink: #fcf0ef;
-  --wp-block-table-stripes: #f0f0f0;
   --wp-block-search-border: #949494;
 }
 
@@ -1147,20 +1119,24 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 .editor-styles-wrapper .wp-block-button__link {
   color: var(--white);
   background-color: var(--wp-block-button-color);
-  border: none;
-  border-radius: 1.55em;
+  border-radius: 9999px;
   -webkit-box-shadow: none;
           box-shadow: none;
   cursor: pointer;
   display: inline-block;
   font-size: 1.125em;
-  padding: .667em 1.333em;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
   text-align: center;
   text-decoration: none;
   overflow-wrap: break-word;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.editor-styles-wrapper .wp-block-button__link:active, .editor-styles-wrapper .wp-block-button__link:focus, .editor-styles-wrapper .wp-block-button__link:hover, .editor-styles-wrapper .wp-block-button__link:visited {
+.editor-styles-wrapper .wp-block-button__link:hover,
+.editor-styles-wrapper .wp-block-button__link:focus,
+.editor-styles-wrapper .wp-block-button__link:active,
+.editor-styles-wrapper .wp-block-button__link:visited {
   color: var(--white);
 }
 
@@ -1169,32 +1145,66 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-button__link.alignright {
+  /*rtl:ignore*/
   text-align: right;
 }
 
-.editor-styles-wrapper .wp-block-buttons > .wp-block-button .has-custom-width {
+.editor-styles-wrapper .wp-block-buttons > .wp-block-button.has-custom-width {
   max-width: none;
 }
 
-.editor-styles-wrapper .wp-block-buttons > .wp-block-button .has-custom-width .wp-block-button__link {
+.editor-styles-wrapper .wp-block-buttons > .wp-block-button.has-custom-width .wp-block-button__link {
   width: 100%;
 }
 
-.editor-styles-wrapper .wp-block-buttons > .wp-block-button .wp-block-button__width-25 {
+.editor-styles-wrapper .wp-block-buttons
+> .wp-block-button.has-custom-font-size
+.wp-block-button__link {
+  font-size: inherit;
+}
+
+.editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-25 {
   width: calc(25% - 0.5em);
 }
 
-.editor-styles-wrapper .wp-block-buttons > .wp-block-button .wp-block-button__width-50 {
+.editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-50 {
   width: calc(50% - 0.5em);
 }
 
-.editor-styles-wrapper .wp-block-buttons > .wp-block-button .wp-block-button__width-75 {
+.editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-75 {
   width: calc(75% - 0.5em);
 }
 
-.editor-styles-wrapper .wp-block-buttons > .wp-block-button .wp-block-button__width-100 {
+.editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-100 {
+  width: calc(100% - 0.5em);
+}
+
+.editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-100:only-child {
   margin-right: 0;
   width: 100%;
+}
+
+@supports ((-webkit-column-gap: 0.5em) or (column-gap: 0.5em)) {
+  .editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button,
+  .editor-styles-wrapper .wp-block-buttons.is-content-justification-right
+> .wp-block-button.wp-block-button {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-25 {
+    width: calc(25% - 0.375em);
+  }
+  .editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-50 {
+    width: calc(50% - 0.25em);
+  }
+  .editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-75 {
+    width: calc(75% - 0.125em);
+  }
+  .editor-styles-wrapper .wp-block-buttons > .wp-block-button.wp-block-button__width-100 {
+    width: auto;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .editor-styles-wrapper .wp-block-button.is-style-squared,
@@ -1203,18 +1213,19 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-button.no-border-radius,
-.editor-styles-wrapper .wp-block-button__link.wp-block-button.no-border-radius {
+.editor-styles-wrapper .wp-block-button__link.no-border-radius {
   border-radius: 0 !important;
 }
 
 .editor-styles-wrapper .is-style-outline > .wp-block-button__link,
 .editor-styles-wrapper .wp-block-button__link.is-style-outline {
-  border: 2px solid;
+  border: 2px solid currentColor;
+  padding: 0.667em 1.333em;
 }
 
 .editor-styles-wrapper .is-style-outline > .wp-block-button__link:not(.has-text-color),
 .editor-styles-wrapper .wp-block-button__link.is-style-outline:not(.has-text-color) {
-  color: var(--wp-block-button-color);
+  color: currentColor;
 }
 
 .editor-styles-wrapper .is-style-outline > .wp-block-button__link:not(.has-background),
@@ -1232,6 +1243,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
   /* stylelint-disable indentation */
 }
 
@@ -1302,7 +1315,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: 0;
 }
 
-.editor-styles-wrapper .wp-block-buttons.is-content-justification-right > .wp-block-button:first-child {
+.editor-styles-wrapper .wp-block-buttons.is-content-justification-right
+> .wp-block-button:first-child {
   /*rtl:ignore*/
   margin-left: 0;
 }
@@ -1347,7 +1361,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-left: 0;
 }
 
-.editor-styles-wrapper .wp-block-buttons .wp-block-button.aligncenter {
+.editor-styles-wrapper .wp-block-buttons
+.wp-block-button.aligncenter {
   /* stylelint-enable indentation */
   margin-left: auto;
   margin-right: auto;
@@ -1355,13 +1370,22 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   width: 100%;
 }
 
+.editor-styles-wrapper .wp-block-button.aligncenter {
+  text-align: center;
+}
+
+.editor-styles-wrapper :root {
+  --wp-block-calendar-color: #ddd;
+  --wp-block-calendar-text: #40464d;
+}
+
 .editor-styles-wrapper .wp-block-calendar {
   text-align: center;
 }
 
-.editor-styles-wrapper .wp-block-calendar tbody td,
-.editor-styles-wrapper .wp-block-calendar th {
-  padding: .25em;
+.editor-styles-wrapper .wp-block-calendar th,
+.editor-styles-wrapper .wp-block-calendar tbody td {
+  padding: 0.25em;
   border: 1px solid var(--wp-block-calendar-color);
 }
 
@@ -1383,8 +1407,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   text-decoration: underline;
 }
 
-.editor-styles-wrapper .wp-block-calendar table caption,
-.editor-styles-wrapper .wp-block-calendar table tbody {
+.editor-styles-wrapper .wp-block-calendar table tbody,
+.editor-styles-wrapper .wp-block-calendar table caption {
   color: var(--wp-block-calendar-text);
 }
 
@@ -1403,8 +1427,13 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.75em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /**
+  * All Columns Alignment
+  */
 }
 
 @media (min-width: 50em) {
@@ -1415,7 +1444,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-columns.has-background {
-  padding: var(--has-background-padding);
+  padding: 1.25em 2.375em;
 }
 
 .editor-styles-wrapper .wp-block-columns.are-vertically-aligned-top {
@@ -1443,12 +1472,28 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   min-width: 0;
   word-break: break-word;
   overflow-wrap: break-word;
+  /**
+  * Individual Column Alignment
+  */
 }
 
-@media (max-width: 599px) {
+@media (max-width: 37.45em) {
   .editor-styles-wrapper .wp-block-column {
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
+  }
+}
+
+@media (min-width: 37.5em) and (max-width: 49.95em) {
+  .editor-styles-wrapper .wp-block-column:not(:only-child) {
+    -ms-flex-preferred-size: calc(50% - 1em) !important;
+        flex-basis: calc(50% - 1em) !important;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .editor-styles-wrapper .wp-block-column:nth-child(even) {
+    margin-left: 2em;
   }
 }
 
@@ -1476,8 +1521,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-column.is-vertically-aligned-center {
-  -ms-grid-row-align: center;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -1486,19 +1531,18 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
       align-self: flex-end;
 }
 
-.editor-styles-wrapper .wp-block-column.is-vertically-aligned-bottom,
+.editor-styles-wrapper .wp-block-column.is-vertically-aligned-top,
 .editor-styles-wrapper .wp-block-column.is-vertically-aligned-center,
-.editor-styles-wrapper .wp-block-column.is-vertically-aligned-top {
+.editor-styles-wrapper .wp-block-column.is-vertically-aligned-bottom {
   width: 100%;
 }
 
-.editor-styles-wrapper .wp-block-cover,
-.editor-styles-wrapper .wp-block-cover-image {
+.editor-styles-wrapper .wp-block-cover-image,
+.editor-styles-wrapper .wp-block-cover {
   position: relative;
   background-size: cover;
-  background-position: 50%;
+  background-position: center center;
   min-height: 430px;
-  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1512,6 +1556,16 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   padding: 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /**
+   * Set a default background color for has-background-dim _unless_ it includes another
+   * background-color class (e.g. has-green-background-color). The presence of another
+   * background-color class implies that another style will provide the background color
+   * for the overlay.
+   *
+   * See:
+   *   - Issue with background color specificity: https://github.com/WordPress/gutenberg/issues/26545
+   *   - Issue with alternative fix: https://github.com/WordPress/gutenberg/issues/26545
+   */
 }
 
 .editor-styles-wrapper .wp-block-cover-image.has-parallax,
@@ -1539,20 +1593,20 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   background-size: auto;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim:not([class*=-background-color]),
-.editor-styles-wrapper .wp-block-cover.has-background-dim:not([class*=-background-color]) {
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim:not([class*="-background-color"]),
+.editor-styles-wrapper .wp-block-cover.has-background-dim:not([class*="-background-color"]) {
   background-color: var(--black);
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim:before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim:before {
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim::before {
   content: "";
   background-color: inherit;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim:not(.has-background-gradient):before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim:not(.has-background-gradient)::before,
 .editor-styles-wrapper .wp-block-cover-image .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim:not(.has-background-gradient):before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim:not(.has-background-gradient)::before,
 .editor-styles-wrapper .wp-block-cover .wp-block-cover__gradient-background {
   position: absolute;
   top: 0;
@@ -1560,76 +1614,96 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   bottom: 0;
   right: 0;
   z-index: 1;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-10 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-10:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-10 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-10:not(.has-background-gradient):before {
-  opacity: .1;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-10:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-10
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-10:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-10
+.wp-block-cover__gradient-background {
+  opacity: 0.1;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-20 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-20:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-20 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-20:not(.has-background-gradient):before {
-  opacity: .2;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-20:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-20
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-20:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-20
+.wp-block-cover__gradient-background {
+  opacity: 0.2;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-30 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-30:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-30 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-30:not(.has-background-gradient):before {
-  opacity: .3;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-30:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-30
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-30:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-30
+.wp-block-cover__gradient-background {
+  opacity: 0.3;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-40 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient):before {
-  opacity: .4;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-40:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-40
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-40:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-40
+.wp-block-cover__gradient-background {
+  opacity: 0.4;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-50 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-50:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-50 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-50:not(.has-background-gradient):before {
-  opacity: .5;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-50:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-50
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-50:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-50
+.wp-block-cover__gradient-background {
+  opacity: 0.5;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-60 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-60:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-60 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-60:not(.has-background-gradient):before {
-  opacity: .6;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-60:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-60
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-60:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-60
+.wp-block-cover__gradient-background {
+  opacity: 0.6;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-70 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-70:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-70 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-70:not(.has-background-gradient):before {
-  opacity: .7;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-70:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-70
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-70:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-70
+.wp-block-cover__gradient-background {
+  opacity: 0.7;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-80 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-80:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-80 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-80:not(.has-background-gradient):before {
-  opacity: .8;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-80:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-80
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-80:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-80
+.wp-block-cover__gradient-background {
+  opacity: 0.8;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-90 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-90:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-90 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-90:not(.has-background-gradient):before {
-  opacity: .9;
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-90:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-90
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-90:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-90
+.wp-block-cover__gradient-background {
+  opacity: 0.9;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-100 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-100:not(.has-background-gradient):before,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-100 .wp-block-cover__gradient-background,
-.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-100:not(.has-background-gradient):before {
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-100:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover-image.has-background-dim.has-background-dim-100
+.wp-block-cover__gradient-background,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-100:not(.has-background-gradient)::before,
+.editor-styles-wrapper .wp-block-cover.has-background-dim.has-background-dim-100
+.wp-block-cover__gradient-background {
   opacity: 1;
 }
 
@@ -1641,8 +1715,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   width: 100%;
 }
 
-.editor-styles-wrapper .wp-block-cover-image:after,
-.editor-styles-wrapper .wp-block-cover:after {
+.editor-styles-wrapper .wp-block-cover-image::after,
+.editor-styles-wrapper .wp-block-cover::after {
   display: block;
   content: "";
   font-size: 0;
@@ -1650,8 +1724,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
-  .editor-styles-wrapper .wp-block-cover-image:after,
-  .editor-styles-wrapper .wp-block-cover:after {
+  .editor-styles-wrapper .wp-block-cover-image::after,
+  .editor-styles-wrapper .wp-block-cover::after {
     content: none;
   }
 }
@@ -1674,22 +1748,20 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   color: var(--white);
 }
 
-.editor-styles-wrapper .wp-block-cover-image .wp-block-subhead:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover-image p:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover-image h1:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover-image h2:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover-image h3:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover-image h4:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover-image h5:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover-image h6:not(.has-text-color),
-.editor-styles-wrapper .wp-block-cover-image p:not(.has-text-color),
-.editor-styles-wrapper .wp-block-cover .wp-block-subhead:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover p:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover h1:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover h2:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover h3:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover h4:not(.has-text-color),
 .editor-styles-wrapper .wp-block-cover h5:not(.has-text-color),
-.editor-styles-wrapper .wp-block-cover h6:not(.has-text-color),
-.editor-styles-wrapper .wp-block-cover p:not(.has-text-color) {
+.editor-styles-wrapper .wp-block-cover h6:not(.has-text-color) {
   color: inherit;
 }
 
@@ -1783,8 +1855,10 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
           justify-content: flex-end;
 }
 
-.editor-styles-wrapper .wp-block-cover-image.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container,
-.editor-styles-wrapper .wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+.editor-styles-wrapper .wp-block-cover-image.has-custom-content-position.has-custom-content-position
+.wp-block-cover__inner-container,
+.editor-styles-wrapper .wp-block-cover.has-custom-content-position.has-custom-content-position
+.wp-block-cover__inner-container {
   margin: 0;
   width: auto;
 }
@@ -1820,24 +1894,24 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   z-index: 0;
 }
 
+.editor-styles-wrapper section.wp-block-cover-image h2,
 .editor-styles-wrapper .wp-block-cover-image-text,
-.editor-styles-wrapper .wp-block-cover-text,
-.editor-styles-wrapper section.wp-block-cover-image h2 {
+.editor-styles-wrapper .wp-block-cover-text {
   color: var(--white);
 }
 
-.editor-styles-wrapper .wp-block-cover-image-text a,
-.editor-styles-wrapper .wp-block-cover-image-text a:active,
-.editor-styles-wrapper .wp-block-cover-image-text a:focus,
-.editor-styles-wrapper .wp-block-cover-image-text a:hover,
-.editor-styles-wrapper .wp-block-cover-text a,
-.editor-styles-wrapper .wp-block-cover-text a:active,
-.editor-styles-wrapper .wp-block-cover-text a:focus,
-.editor-styles-wrapper .wp-block-cover-text a:hover,
 .editor-styles-wrapper section.wp-block-cover-image h2 a,
-.editor-styles-wrapper section.wp-block-cover-image h2 a:active,
+.editor-styles-wrapper section.wp-block-cover-image h2 a:hover,
 .editor-styles-wrapper section.wp-block-cover-image h2 a:focus,
-.editor-styles-wrapper section.wp-block-cover-image h2 a:hover {
+.editor-styles-wrapper section.wp-block-cover-image h2 a:active,
+.editor-styles-wrapper .wp-block-cover-image-text a,
+.editor-styles-wrapper .wp-block-cover-image-text a:hover,
+.editor-styles-wrapper .wp-block-cover-image-text a:focus,
+.editor-styles-wrapper .wp-block-cover-image-text a:active,
+.editor-styles-wrapper .wp-block-cover-text a,
+.editor-styles-wrapper .wp-block-cover-text a:hover,
+.editor-styles-wrapper .wp-block-cover-text a:focus,
+.editor-styles-wrapper .wp-block-cover-text a:active {
   color: var(--white);
 }
 
@@ -1853,29 +1927,29 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
           justify-content: flex-end;
 }
 
+.editor-styles-wrapper section.wp-block-cover-image.has-left-content > h2,
 .editor-styles-wrapper .wp-block-cover-image.has-left-content .wp-block-cover-image-text,
-.editor-styles-wrapper .wp-block-cover.has-left-content .wp-block-cover-text,
-.editor-styles-wrapper section.wp-block-cover-image.has-left-content > h2 {
+.editor-styles-wrapper .wp-block-cover.has-left-content .wp-block-cover-text {
   margin-left: 0;
   text-align: left;
 }
 
+.editor-styles-wrapper section.wp-block-cover-image.has-right-content > h2,
 .editor-styles-wrapper .wp-block-cover-image.has-right-content .wp-block-cover-image-text,
-.editor-styles-wrapper .wp-block-cover.has-right-content .wp-block-cover-text,
-.editor-styles-wrapper section.wp-block-cover-image.has-right-content > h2 {
+.editor-styles-wrapper .wp-block-cover.has-right-content .wp-block-cover-text {
   margin-right: 0;
   text-align: right;
 }
 
+.editor-styles-wrapper section.wp-block-cover-image > h2,
 .editor-styles-wrapper .wp-block-cover-image .wp-block-cover-image-text,
-.editor-styles-wrapper .wp-block-cover .wp-block-cover-text,
-.editor-styles-wrapper section.wp-block-cover-image > h2 {
+.editor-styles-wrapper .wp-block-cover .wp-block-cover-text {
   font-size: 2em;
   line-height: 1.25;
   z-index: 1;
   margin-bottom: 0;
-  max-width: 580px;
-  padding: .44em;
+  max-width: 840px;
+  padding: 0.44em;
   text-align: center;
 }
 
@@ -1897,16 +1971,41 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   border-radius: 9999px;
 }
 
-.editor-styles-wrapper .wp-block[data-align=left] > [data-type="core/embed"],
-.editor-styles-wrapper .wp-block[data-align=right] > [data-type="core/embed"],
+.editor-styles-wrapper .wp-block-site-logo {
+  line-height: 0;
+}
+
+.editor-styles-wrapper .wp-block-site-logo a {
+  display: inline-block;
+}
+
+.editor-styles-wrapper .wp-block-site-logo.is-default-size img {
+  width: 120px;
+  height: auto;
+}
+
+.editor-styles-wrapper .wp-block-site-logo .aligncenter {
+  display: table;
+}
+
+.editor-styles-wrapper .wp-block-site-logo.is-style-rounded img {
+  border-radius: 9999px;
+}
+
+.editor-styles-wrapper .wp-block[data-align="left"] > [data-type="core/embed"],
+.editor-styles-wrapper .wp-block[data-align="right"] > [data-type="core/embed"],
 .editor-styles-wrapper .wp-block-embed.alignleft,
 .editor-styles-wrapper .wp-block-embed.alignright {
   max-width: 360px;
   width: 100%;
 }
 
-.editor-styles-wrapper .wp-block[data-align=left] > [data-type="core/embed"] .wp-block-embed__wrapper,
-.editor-styles-wrapper .wp-block[data-align=right] > [data-type="core/embed"] .wp-block-embed__wrapper,
+.editor-styles-wrapper .wp-block[data-align="left"]
+> [data-type="core/embed"]
+.wp-block-embed__wrapper,
+.editor-styles-wrapper .wp-block[data-align="right"]
+> [data-type="core/embed"]
+.wp-block-embed__wrapper,
 .editor-styles-wrapper .wp-block-embed.alignleft .wp-block-embed__wrapper,
 .editor-styles-wrapper .wp-block-embed.alignright .wp-block-embed__wrapper {
   min-width: 280px;
@@ -1918,7 +2017,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-embed {
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
 }
 
 .editor-styles-wrapper .wp-block-embed figcaption {
@@ -1991,10 +2090,14 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   text-align: right;
 }
 
+.editor-styles-wrapper .wp-block-file .wp-block-file__embed {
+  margin-bottom: 1em;
+}
+
 .editor-styles-wrapper .wp-block-file .wp-block-file__button {
-  background: #32373c;
+  background: var(--wp-block-button-color);
   border-radius: 2em;
-  color: #fff;
+  color: var(--white);
   font-size: 0.8em;
   padding: 0.5em 1em;
 }
@@ -2009,7 +2112,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 .editor-styles-wrapper .wp-block-file a.wp-block-file__button:active {
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #fff;
+  color: var(--white);
   opacity: 0.85;
   text-decoration: none;
 }
@@ -2049,6 +2152,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: calc(50% - 1em);
 }
 
@@ -2113,7 +2218,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   max-height: 100%;
   overflow: auto;
   padding: 3em 0.77em 0.7em;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-size: 0.8em;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.7)), color-stop(70%, rgba(0, 0, 0, 0.3)), to(transparent));
@@ -2135,6 +2240,15 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.editor-styles-wrapper .wp-block-gallery.is-cropped .blocks-gallery-image,
+.editor-styles-wrapper .wp-block-gallery.is-cropped .blocks-gallery-item,
+.editor-styles-wrapper .blocks-gallery-grid.is-cropped .blocks-gallery-image,
+.editor-styles-wrapper .blocks-gallery-grid.is-cropped .blocks-gallery-item {
+  -ms-flex-item-align: inherit;
+      -ms-grid-row-align: inherit;
+      align-self: inherit;
 }
 
 .editor-styles-wrapper .wp-block-gallery.is-cropped .blocks-gallery-image a,
@@ -2174,7 +2288,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin-right: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .editor-styles-wrapper .wp-block-gallery.columns-3 .blocks-gallery-image,
   .editor-styles-wrapper .wp-block-gallery.columns-3 .blocks-gallery-item,
   .editor-styles-wrapper .blocks-gallery-grid.columns-3 .blocks-gallery-image,
@@ -2295,7 +2409,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-image {
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
 }
 
 .editor-styles-wrapper .wp-block-image img {
@@ -2383,6 +2497,18 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   }
 }
 
+.editor-styles-wrapper .wp-block-image figure {
+  margin: 0;
+}
+
+.editor-styles-wrapper ol.wp-block-latest-comments {
+  margin-left: 0;
+}
+
+.editor-styles-wrapper .wp-block-latest-comments .wp-block-latest-comments {
+  padding-left: 0;
+}
+
 .editor-styles-wrapper .wp-block-latest-comments__comment {
   line-height: 1.1;
   list-style: none;
@@ -2394,8 +2520,12 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   list-style: none;
 }
 
-.editor-styles-wrapper .has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta,
-.editor-styles-wrapper .has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt {
+.editor-styles-wrapper .has-avatars
+.wp-block-latest-comments__comment
+.wp-block-latest-comments__comment-meta,
+.editor-styles-wrapper .has-avatars
+.wp-block-latest-comments__comment
+.wp-block-latest-comments__comment-excerpt {
   margin-left: 3.25em;
 }
 
@@ -2437,6 +2567,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 
 .editor-styles-wrapper .wp-block-latest-posts.wp-block-latest-posts__list {
   list-style: none;
+  padding-left: 0;
 }
 
 .editor-styles-wrapper .wp-block-latest-posts.wp-block-latest-posts__list li {
@@ -2457,7 +2588,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .editor-styles-wrapper .wp-block-latest-posts.columns-2 li {
     width: calc((100% / 2) - 1.25em + (1.25em / 2));
   }
@@ -2509,6 +2640,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 .editor-styles-wrapper .wp-block-latest-posts__featured-image img {
   height: auto;
   width: auto;
+  max-width: 100%;
 }
 
 .editor-styles-wrapper .wp-block-latest-posts__featured-image.alignleft {
@@ -2533,20 +2665,20 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 1fr;
-  grid-template-columns: 50% 1fr;
+      grid-template-columns: 50% 1fr;
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
 }
 
 .editor-styles-wrapper .wp-block-media-text.has-media-on-the-right {
   -ms-grid-columns: 1fr 50%;
-  grid-template-columns: 1fr 50%;
+      grid-template-columns: 1fr 50%;
 }
 
 .editor-styles-wrapper .wp-block-media-text.is-vertically-aligned-top .wp-block-media-text__content,
 .editor-styles-wrapper .wp-block-media-text.is-vertically-aligned-top .wp-block-media-text__media {
-  -ms-grid-row-align: start;
   -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
       align-self: start;
 }
 
@@ -2554,15 +2686,15 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 .editor-styles-wrapper .wp-block-media-text .wp-block-media-text__media,
 .editor-styles-wrapper .wp-block-media-text.is-vertically-aligned-center .wp-block-media-text__content,
 .editor-styles-wrapper .wp-block-media-text.is-vertically-aligned-center .wp-block-media-text__media {
-  -ms-grid-row-align: center;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
 .editor-styles-wrapper .wp-block-media-text.is-vertically-aligned-bottom .wp-block-media-text__content,
 .editor-styles-wrapper .wp-block-media-text.is-vertically-aligned-bottom .wp-block-media-text__media {
-  -ms-grid-row-align: end;
   -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
       align-self: end;
 }
 
@@ -2635,10 +2767,10 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   border: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .editor-styles-wrapper .wp-block-media-text.is-stacked-on-mobile {
     -ms-grid-columns: 100% !important;
-    grid-template-columns: 100% !important;
+        grid-template-columns: 100% !important;
   }
   .editor-styles-wrapper .wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__media {
     -ms-grid-column: 1;
@@ -2656,6 +2788,10 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 
 .editor-styles-wrapper .wp-block-preformatted {
   white-space: pre-wrap;
+}
+
+.editor-styles-wrapper .wp-block-preformatted.has-background {
+  padding: 1.25em 2.375em;
 }
 
 .editor-styles-wrapper .wp-block-post-author {
@@ -2695,27 +2831,92 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   margin: 0;
 }
 
-.editor-styles-wrapper .wp-block-post-comments-form input[type=submit] {
-  color: #fff;
-  background-color: #32373c;
+.editor-styles-wrapper .wp-block-post-comments .commentlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .commentlist .comment {
+  min-height: 2.25em;
+  padding-left: 3.25em;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .commentlist .comment p {
+  font-size: 0.875em;
+  line-height: 1.8;
+  margin: 0.36em 0 1.4em;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .commentlist .children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .comment-author {
+  line-height: 1.5;
+  margin-left: -3.25em;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .comment-author .avatar {
+  border-radius: 1.5em;
+  display: block;
+  float: left;
+  height: 2.5em;
+  margin-right: 0.75em;
+  width: 2.5em;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .comment-author cite {
+  font-style: normal;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .comment-meta {
+  line-height: 1.5;
+  margin-left: -3.25em;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .comment-body .commentmetadata {
+  font-size: 0.75em;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .comment-form-comment label,
+.editor-styles-wrapper .wp-block-post-comments .comment-form-author label,
+.editor-styles-wrapper .wp-block-post-comments .comment-form-email label,
+.editor-styles-wrapper .wp-block-post-comments .comment-form-url label {
+  display: block;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .comment-form-comment textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.editor-styles-wrapper .wp-block-post-comments .reply {
+  font-size: 0.75em;
+  margin-bottom: 1.4em;
+}
+
+.editor-styles-wrapper .wp-block-post-comments textarea,
+.editor-styles-wrapper .wp-block-post-comments input {
+  border: 1px solid var(--wp-block-search-border);
+}
+
+.editor-styles-wrapper .wp-block-post-comments-form input[type="submit"] {
   border: none;
-  border-radius: 1.55em;
   -webkit-box-shadow: none;
           box-shadow: none;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.125em;
-  padding: 0.667em 1.333em;
   text-align: center;
-  text-decoration: none;
   overflow-wrap: break-word;
 }
 
-.editor-styles-wrapper .wp-block-post-comments-form input[type=submit]:hover,
-.editor-styles-wrapper .wp-block-post-comments-form input[type=submit]:focus,
-.editor-styles-wrapper .wp-block-post-comments-form input[type=submit]:active,
-.editor-styles-wrapper .wp-block-post-comments-form input[type=submit]:visited {
-  color: #fff;
+.editor-styles-wrapper .wp-block-post-featured-image {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .editor-styles-wrapper .wp-block-post-featured-image a {
@@ -2727,10 +2928,14 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   height: auto;
 }
 
+.editor-styles-wrapper .wp-block-post-featured-image.alignwide img,
+.editor-styles-wrapper .wp-block-post-featured-image.alignfull img {
+  width: 100%;
+}
+
 .editor-styles-wrapper .wp-block-pullquote {
+  margin: 0 0 1em 0;
   padding: 3em 0;
-  margin-left: 0;
-  margin-right: 0;
   text-align: center;
 }
 
@@ -2788,16 +2993,19 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   color: inherit;
 }
 
+.editor-styles-wrapper .wp-block-post-template,
 .editor-styles-wrapper .wp-block-query-loop {
   max-width: 100%;
   list-style: none;
   padding: 0;
 }
 
+.editor-styles-wrapper .wp-block-post-template li,
 .editor-styles-wrapper .wp-block-query-loop li {
   clear: both;
 }
 
+.editor-styles-wrapper .wp-block-post-template.is-flex-container,
 .editor-styles-wrapper .wp-block-query-loop.is-flex-container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -2810,43 +3018,65 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
       flex-wrap: wrap;
 }
 
+.editor-styles-wrapper .wp-block-post-template.is-flex-container li,
 .editor-styles-wrapper .wp-block-query-loop.is-flex-container li {
   margin: 0 0 1.25em 0;
   width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container li,
   .editor-styles-wrapper .wp-block-query-loop.is-flex-container li {
     margin-right: 1.25em;
   }
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-2 > li,
   .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-2 > li {
     width: calc((100% / 2) - 1.25em + (1.25em / 2));
   }
-  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-2 > li:nth-child(2n) {
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-2
+> li:nth-child(2n),
+  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-2
+> li:nth-child(2n) {
     margin-right: 0;
   }
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-3 > li,
   .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-3 > li {
     width: calc((100% / 3) - 1.25em + (1.25em / 3));
   }
-  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-3 > li:nth-child(3n) {
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-3
+> li:nth-child(3n),
+  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-3
+> li:nth-child(3n) {
     margin-right: 0;
   }
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-4 > li,
   .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-4 > li {
     width: calc((100% / 4) - 1.25em + (1.25em / 4));
   }
-  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-4 > li:nth-child(4n) {
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-4
+> li:nth-child(4n),
+  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-4
+> li:nth-child(4n) {
     margin-right: 0;
   }
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-5 > li,
   .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-5 > li {
     width: calc((100% / 5) - 1.25em + (1.25em / 5));
   }
-  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-5 > li:nth-child(5n) {
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-5
+> li:nth-child(5n),
+  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-5
+> li:nth-child(5n) {
     margin-right: 0;
   }
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-6 > li,
   .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-6 > li {
     width: calc((100% / 6) - 1.25em + (1.25em / 6));
   }
-  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-6 > li:nth-child(6n) {
+  .editor-styles-wrapper .wp-block-post-template.is-flex-container.is-flex-container.columns-6
+> li:nth-child(6n),
+  .editor-styles-wrapper .wp-block-query-loop.is-flex-container.is-flex-container.columns-6
+> li:nth-child(6n) {
     margin-right: 0;
   }
 }
@@ -2930,21 +3160,21 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .editor-styles-wrapper .wp-block-rss.columns-2 li {
-    width: calc(( 100% / 2) - 1em);
+    width: calc((100% / 2) - 1em);
   }
   .editor-styles-wrapper .wp-block-rss.columns-3 li {
-    width: calc(( 100% / 3) - 1em);
+    width: calc((100% / 3) - 1em);
   }
   .editor-styles-wrapper .wp-block-rss.columns-4 li {
-    width: calc(( 100% / 4) - 1em);
+    width: calc((100% / 4) - 1em);
   }
   .editor-styles-wrapper .wp-block-rss.columns-5 li {
-    width: calc(( 100% / 5) - 1em);
+    width: calc((100% / 5) - 1em);
   }
   .editor-styles-wrapper .wp-block-rss.columns-6 li {
-    width: calc(( 100% / 6) - 1em);
+    width: calc((100% / 6) - 1em);
   }
 }
 
@@ -2959,7 +3189,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   background: #f7f7f7;
   border: 1px solid #ccc;
   padding: 0.375em 0.625em;
-  color: #32373c;
+  color: var(--wp-block-button-color);
   margin-left: 0.625em;
   word-break: normal;
 }
@@ -2994,30 +3224,46 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
       -ms-flex-positive: 1;
           flex-grow: 1;
   min-width: 3em;
-  border: 1px solid #949494;
+  border: 1px solid var(--wp-block-search-border);
 }
 
 .editor-styles-wrapper .wp-block-search.wp-block-search__button-only .wp-block-search__button {
   margin-left: 0;
 }
 
-.editor-styles-wrapper .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+.editor-styles-wrapper .wp-block-search.wp-block-search__button-inside
+.wp-block-search__inside-wrapper {
   padding: 4px;
-  border: 1px solid #949494;
+  border: 1px solid var(--wp-block-search-border);
 }
 
-.editor-styles-wrapper .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input {
+.editor-styles-wrapper .wp-block-search.wp-block-search__button-inside
+.wp-block-search__inside-wrapper
+.wp-block-search__input {
   border-radius: 0;
   border: none;
   padding: 0 0 0 0.25em;
 }
 
-.editor-styles-wrapper .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input:focus {
+.editor-styles-wrapper .wp-block-search.wp-block-search__button-inside
+.wp-block-search__inside-wrapper
+.wp-block-search__input:focus {
   outline: none;
 }
 
-.editor-styles-wrapper .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button {
+.editor-styles-wrapper .wp-block-search.wp-block-search__button-inside
+.wp-block-search__inside-wrapper
+.wp-block-search__button {
   padding: 0.125em 0.5em;
+}
+
+.editor-styles-wrapper .wp-block-search.aligncenter .wp-block-search__inside-wrapper {
+  margin: auto;
+}
+
+.editor-styles-wrapper .wp-block-separator {
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
 .editor-styles-wrapper .wp-block-separator.is-style-wide {
@@ -3028,7 +3274,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   background: none !important;
   border: none;
   text-align: center;
-  max-width: none;
+  width: none;
   line-height: 1;
   height: auto;
 }
@@ -3049,9 +3295,6 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   padding-left: 0;
   padding-right: 0;
   text-indent: 0;
@@ -3111,7 +3354,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
           justify-content: flex-end;
 }
 
-.editor-styles-wrapper .wp-social-link {
+.editor-styles-wrapper .wp-block-social-link {
   display: block;
   border-radius: 9999px;
   -webkit-transition: -webkit-transform 0.1s ease;
@@ -3122,13 +3365,15 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .editor-styles-wrapper .wp-social-link {
+  .editor-styles-wrapper .wp-block-social-link {
     -webkit-transition-duration: 0s;
             transition-duration: 0s;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
   }
 }
 
-.editor-styles-wrapper .wp-social-link a {
+.editor-styles-wrapper .wp-block-social-link a {
   display: block;
   line-height: 0;
   -webkit-transition: -webkit-transform 0.1s ease;
@@ -3137,18 +3382,22 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   transition: transform 0.1s ease, -webkit-transform 0.1s ease;
 }
 
-.editor-styles-wrapper .wp-social-link a,
-.editor-styles-wrapper .wp-social-link a:hover,
-.editor-styles-wrapper .wp-social-link a:active,
-.editor-styles-wrapper .wp-social-link a:visited,
-.editor-styles-wrapper .wp-social-link svg {
-  color: currentColor;
-  fill: currentColor;
-}
-
-.editor-styles-wrapper .wp-social-link:hover {
+.editor-styles-wrapper .wp-block-social-link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.editor-styles-wrapper .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor,
+.editor-styles-wrapper .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:hover,
+.editor-styles-wrapper .wp-block-social-links
+.wp-block-social-link
+.wp-block-social-link-anchor:active,
+.editor-styles-wrapper .wp-block-social-links
+.wp-block-social-link
+.wp-block-social-link-anchor:visited,
+.editor-styles-wrapper .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor svg {
+  color: currentColor;
+  fill: currentColor;
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link {
@@ -3158,67 +3407,67 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-amazon {
   background-color: #f90;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-bandcamp {
   background-color: #1ea0c3;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-behance {
   background-color: #0757fe;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-codepen {
   background-color: #1e1f26;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-deviantart {
   background-color: #02e49b;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-dribbble {
   background-color: #e94c89;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-dropbox {
   background-color: #4280ff;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-etsy {
   background-color: #f45800;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-facebook {
   background-color: #1778f2;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-fivehundredpx {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-flickr {
   background-color: #0461dd;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-foursquare {
   background-color: #e65678;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-github {
   background-color: #24292d;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-goodreads {
@@ -3228,128 +3477,128 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-google {
   background-color: #ea4434;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram {
   background-color: #f00075;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-lastfm {
   background-color: #e21b24;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-linkedin {
   background-color: #0d66c2;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-mastodon {
   background-color: #3288d4;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-medium {
   background-color: #02ab6c;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-meetup {
   background-color: #f6405f;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-patreon {
   background-color: #ff424d;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-pinterest {
   background-color: #e60122;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-pocket {
   background-color: #ef4155;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-reddit {
   background-color: #fe4500;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-skype {
   background-color: #0478d7;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-snapchat {
   background-color: #fefc00;
-  color: #fff;
-  stroke: #000;
+  color: var(--white);
+  stroke: var(--black);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-soundcloud {
   background-color: #ff5600;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-spotify {
   background-color: #1bd760;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-telegram {
   background-color: #2aabee;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-tiktok {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-tumblr {
   background-color: #011835;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-twitch {
   background-color: #6440a4;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-twitter {
   background-color: #1da1f2;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-vimeo {
   background-color: #1eb7ea;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-vk {
   background-color: #4680c2;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-wordpress {
   background-color: #3499cd;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-yelp {
   background-color: #d32422;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-youtube {
   background-color: #f00;
-  color: #fff;
+  color: var(--white);
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link {
@@ -3394,7 +3643,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link-fivehundredpx {
-  color: #000;
+  color: var(--black);
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link-flickr {
@@ -3462,8 +3711,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link-snapchat {
-  color: #fff;
-  stroke: #000;
+  color: var(--white);
+  stroke: var(--black);
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link-soundcloud {
@@ -3479,7 +3728,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link-tiktok {
-  color: #000;
+  color: var(--black);
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link-tumblr {
@@ -3507,8 +3756,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link-yelp {
-  background-color: #d32422;
-  color: #fff;
+  color: #d32422;
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-logos-only .wp-social-link-youtube {
@@ -3520,8 +3768,8 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-social-links.is-style-pill-shape .wp-social-link a {
-  padding-left: calc((2/3) * 1em);
-  padding-right: calc((2/3) * 1em);
+  padding-left: calc((2 / 3) * 1em);
+  padding-right: calc((2 / 3) * 1em);
 }
 
 .editor-styles-wrapper .wp-block-spacer {
@@ -3534,11 +3782,21 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   opacity: 0.75;
 }
 
+.editor-styles-wrapper :root {
+  --wp-block-table-light-gray: #f3f4f5;
+  --wp-block-table-pale-green: #e9fbe5;
+  --wp-block-table-pale-blue: #e7f5fe;
+  --wp-block-table-pale-pink: #fcf0ef;
+  --wp-block-table-stripes: #f0f0f0;
+}
+
 .editor-styles-wrapper .wp-block-table {
+  margin: 0 0 1em 0;
   overflow-x: auto;
 }
 
 .editor-styles-wrapper .wp-block-table table {
+  border-collapse: collapse;
   width: 100%;
 }
 
@@ -3569,51 +3827,80 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 }
 
 .editor-styles-wrapper .wp-block-table .has-subtle-light-gray-background-color {
-  background-color: #f3f4f5;
+  background-color: var(--wp-block-table-light-gray);
 }
 
 .editor-styles-wrapper .wp-block-table .has-subtle-pale-green-background-color {
-  background-color: #e9fbe5;
+  background-color: var(--wp-block-table-pale-green);
 }
 
 .editor-styles-wrapper .wp-block-table .has-subtle-pale-blue-background-color {
-  background-color: #e7f5fe;
+  background-color: var(--wp-block-table-pale-blue);
 }
 
 .editor-styles-wrapper .wp-block-table .has-subtle-pale-pink-background-color {
-  background-color: #fcf0ef;
+  background-color: var(--wp-block-table-pale-pink);
 }
 
 .editor-styles-wrapper .wp-block-table.is-style-stripes {
   border-spacing: 0;
   border-collapse: inherit;
   background-color: transparent;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--wp-block-table-stripes);
 }
 
 .editor-styles-wrapper .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-  background-color: #f0f0f0;
+  background-color: var(--wp-block-table-stripes);
 }
 
-.editor-styles-wrapper .wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd) {
-  background-color: #f3f4f5;
+.editor-styles-wrapper .wp-block-table.is-style-stripes.has-subtle-light-gray-background-color
+tbody
+tr:nth-child(odd) {
+  background-color: var(--wp-block-table-light-gray);
 }
 
-.editor-styles-wrapper .wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd) {
-  background-color: #e9fbe5;
+.editor-styles-wrapper .wp-block-table.is-style-stripes.has-subtle-pale-green-background-color
+tbody
+tr:nth-child(odd) {
+  background-color: var(--wp-block-table-pale-green);
 }
 
-.editor-styles-wrapper .wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd) {
-  background-color: #e7f5fe;
+.editor-styles-wrapper .wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color
+tbody
+tr:nth-child(odd) {
+  background-color: var(--wp-block-table-pale-blue);
 }
 
-.editor-styles-wrapper .wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd) {
-  background-color: #fcf0ef;
+.editor-styles-wrapper .wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color
+tbody
+tr:nth-child(odd) {
+  background-color: var(--wp-block-table-pale-pink);
 }
 
 .editor-styles-wrapper .wp-block-table.is-style-stripes th,
 .editor-styles-wrapper .wp-block-table.is-style-stripes td {
   border-color: transparent;
+}
+
+.editor-styles-wrapper .wp-block-table .has-border-color > *,
+.editor-styles-wrapper .wp-block-table .has-border-color tr,
+.editor-styles-wrapper .wp-block-table .has-border-color th,
+.editor-styles-wrapper .wp-block-table .has-border-color td {
+  border-color: inherit;
+}
+
+.editor-styles-wrapper .wp-block-table table[style*="border-style"] > *,
+.editor-styles-wrapper .wp-block-table table[style*="border-style"] tr,
+.editor-styles-wrapper .wp-block-table table[style*="border-style"] th,
+.editor-styles-wrapper .wp-block-table table[style*="border-style"] td {
+  border-style: inherit;
+}
+
+.editor-styles-wrapper .wp-block-table table[style*="border-width"] > *,
+.editor-styles-wrapper .wp-block-table table[style*="border-width"] tr,
+.editor-styles-wrapper .wp-block-table table[style*="border-width"] th,
+.editor-styles-wrapper .wp-block-table table[style*="border-width"] td {
+  border-width: inherit;
 }
 
 .editor-styles-wrapper .wp-block-tag-cloud.aligncenter {
@@ -3631,6 +3918,10 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   white-space: pre-wrap;
 }
 
+.editor-styles-wrapper .wp-block-video {
+  margin: 0 0 1em 0;
+}
+
 .editor-styles-wrapper .wp-block-video video {
   width: 100%;
 }
@@ -3644,6 +3935,11 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 
 .editor-styles-wrapper .wp-block-video.aligncenter {
   text-align: center;
+}
+
+.editor-styles-wrapper .wp-block-video figcaption {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 .editor-styles-wrapper h1.has-background,
@@ -3738,26 +4034,20 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   font-style: normal;
 }
 
-.editor-styles-wrapper .is-small-text {
-  font-size: var(--fs-s);
+.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
+  float: left;
 }
 
-.editor-styles-wrapper .is-regular-text {
-  font-size: var(--fs-paragraph);
+.editor-styles-wrapper p.has-drop-cap.has-background {
+  overflow: hidden;
 }
 
-.editor-styles-wrapper .is-large-text {
-  font-size: var(--fs-l);
-}
-
-.editor-styles-wrapper .is-larger-text {
-  font-size: var(--fs-xl);
-}
-
+.editor-styles-wrapper .is-small-text,
 .editor-styles-wrapper .has-small-font-size {
   font-size: var(--fs-s);
 }
 
+.editor-styles-wrapper .is-regular-text,
 .editor-styles-wrapper .has-regular-font-size,
 .editor-styles-wrapper .has-normal-font-size {
   font-size: var(--fs-paragraph);
@@ -3767,10 +4057,12 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
   font-size: var(--fs-m);
 }
 
+.editor-styles-wrapper .is-large-text,
 .editor-styles-wrapper .has-large-font-size {
   font-size: var(--fs-l);
 }
 
+.editor-styles-wrapper .is-larger-text,
 .editor-styles-wrapper .has-larger-font-size,
 .editor-styles-wrapper .has-huge-font-size {
   font-size: var(--fs-xl);
@@ -3788,6 +4080,34 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 .editor-styles-wrapper .has-text-align-right {
   /*rtl:ignore*/
   text-align: right;
+}
+
+.editor-styles-wrapper .aligncenter {
+  clear: both;
+}
+
+.editor-styles-wrapper .items-justified-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.editor-styles-wrapper .items-justified-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.editor-styles-wrapper .items-justified-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.editor-styles-wrapper .items-justified-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .editor-styles-wrapper p.has-text-color a {
@@ -3829,8 +4149,7 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 .editor-styles-wrapper :root {
   --wp-admin-theme-color: #007cba;
   --wp-admin-theme-color-darker-10: #006ba1;
-  --wp-admin-theme-color-darker-20: #005a87
-;
+  --wp-admin-theme-color-darker-20: #005a87;
 }
 
 .editor-styles-wrapper #start-resizable-editor-section {
@@ -3849,16 +4168,14 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
           align-items: center;
 }
 
-.editor-styles-wrapper .block-editor-image-alignment-control__row .components-base-control__field .components-base-control__label {
+.editor-styles-wrapper .block-editor-image-alignment-control__row
+.components-base-control__field
+.components-base-control__label {
   margin-bottom: 0;
 }
 
 .editor-styles-wrapper #end-resizable-editor-section {
   display: none;
-}
-
-.editor-styles-wrapper .aligncenter {
-  clear: both;
 }
 
 .editor-styles-wrapper .wp-caption {
@@ -3951,14 +4268,14 @@ TODO: The SCSS variable with the minus 1px calculation causes an error
 @media only screen and (min-width: 664px) {
   .editor-styles-wrapper .alignwide,
   .editor-styles-wrapper .alignfull {
-    margin-left: calc( 2rem - ( 100vw - var(--max-width-text)) / 2);
+    margin-left: calc(2rem - (100vw - var(--max-width-text)) / 2);
   }
 }
 
 @media only screen and (min-width: 65em) {
   .editor-styles-wrapper .alignwide {
     width: calc(var(--max-width-container) - 4rem);
-    margin-left: calc( 2rem - ( ( var(--max-width-container) - var(--max-width-text)) / 2));
+    margin-left: calc( 2rem - ((var(--max-width-container) - var(--max-width-text)) / 2));
     margin-right: initial;
   }
 }

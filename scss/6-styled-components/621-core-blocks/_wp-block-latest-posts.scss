@@ -28,7 +28,7 @@
     margin: 0 1.25em 1.25em 0;
     width: 100%;
 }
-@media (min-width: 600px) {
+@media (min-width: $mq-small) {
     .wp-block-latest-posts.columns-2 li {
         width: calc((100% / 2) - 1.25em + (1.25em / 2));
     }

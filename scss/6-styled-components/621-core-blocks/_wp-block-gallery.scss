@@ -135,7 +135,7 @@
     width: 100%;
     margin-right: 0;
 }
-@media (min-width: 600px) {
+@media (min-width: $mq-small) {
     .wp-block-gallery.columns-3 .blocks-gallery-image,
     .wp-block-gallery.columns-3 .blocks-gallery-item,
     .blocks-gallery-grid.columns-3 .blocks-gallery-image,

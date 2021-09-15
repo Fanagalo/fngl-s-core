@@ -13,7 +13,7 @@
   * All Columns Alignment
   */
 }
-@media (min-width: 782px) {
+@media (min-width: $mq-medium) {
     .wp-block-columns {
         flex-wrap: nowrap;
     }
@@ -40,12 +40,12 @@
   * Individual Column Alignment
   */
 }
-@media (max-width: 599px) {
+@media (max-width: $mq-small - $mq-reduction) {
     .wp-block-column {
         flex-basis: 100% !important;
     }
 }
-@media (min-width: 600px) and (max-width: 781px) {
+@media (min-width: $mq-small) and (max-width: $mq-medium - $mq-reduction) {
     .wp-block-column:not(:only-child) {
         flex-basis: calc(50% - 1em) !important;
         flex-grow: 0;
@@ -54,7 +54,7 @@
         margin-left: 2em;
     }
 }
-@media (min-width: 782px) {
+@media (min-width: $mq-medium) {
     .wp-block-column {
         flex-basis: 0;
         flex-grow: 1;

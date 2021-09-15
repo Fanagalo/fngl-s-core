@@ -17,9 +17,8 @@
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-  float: left;
-
-p.has-drop-cap.has-background {
-  overflow: hidden;
+    float: left;
 }
-
+p.has-drop-cap.has-background {
+    overflow: hidden;
+}

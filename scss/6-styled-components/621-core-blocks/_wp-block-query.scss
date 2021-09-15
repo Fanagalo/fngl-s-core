@@ -33,7 +33,7 @@
     margin: 0 0 1.25em 0;
     width: 100%;
 }
-@media (min-width: 600px) {
+@media (min-width: $mq-small) {
     .wp-block-post-template.is-flex-container li,
     .wp-block-query-loop.is-flex-container li {
         margin-right: 1.25em;
