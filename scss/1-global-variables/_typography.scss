@@ -1,18 +1,16 @@
 /*
-
 declarion of rem-value in _html-body.scss
   html { font-size: 16px; }
 
 the minimal grid unit is 4px, that equals .25rem
 the typographical rhythm is 28px (1.75rem)
-
 */
 
 :root {
     /* font families */
-    --ff-sans: 'Roboto', Arial, sans-serif;
+    --ff-sans: "Roboto", Arial, sans-serif;
     --ff-serif: Georgia, serif;
-    --ff-mono: 'Consolas', Courier, monospace;
+    --ff-mono: "Consolas", Courier, monospace;
     /* font size */
     --fs-xxs: 0.6rem; // ...
     --fs-xs: 0.75rem; // ...
