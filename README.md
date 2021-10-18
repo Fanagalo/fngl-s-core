@@ -4,12 +4,10 @@
 
 ## Description
 Contributor: Fanagalo | Jaap Wiering
-
 Tags:
-
 Requires at least: WordPress 5.7
 
-Tested up to: WordPress 4.3
+Tested up to: WordPress 5.7
 
 Stable tag: 0.78
 
