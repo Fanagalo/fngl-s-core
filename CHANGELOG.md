@@ -1,7 +1,5 @@
 # Changelog
 
-Test voor Monique
-
 ## [0.79] - development started 20210914
 
 ### Added

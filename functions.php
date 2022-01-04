@@ -139,9 +139,8 @@ require get_template_directory() . '/inc/custom-header.php';             // Cust
 require get_template_directory() . '/inc/customizer.php';                // Customizer
 require get_template_directory() . '/inc/custom-block-styling.php';      // Custom styling of the frontend and backend of the block editor 
 require get_template_directory() . '/inc/custom-color-font-blocks.php';  // Custom colors and font sizes for block editor
+require get_template_directory() . '/inc/fngl-recent-posts-shortcode.php';  // Shortcode to display overview of pages, posts of CPT using a shortcode
 
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';  // Load Jetpack compatibility file.
 }
-
-?>
