@@ -1,27 +1,26 @@
-.site-title {
-    margin: .5rem 0;
+h1.site-title,
+p.site-title {
+    margin: 0.5rem 0;
     padding: 0;
-}
-
-.site-title a,
-.site-title a:visited {
-    color: var(--diap-color);
     font-size: 2rem;
     font-weight: 700;
+    line-height: var(--lh-paragraph);
+    a,
+    a:visited {
+        color: var(--diap-color);
+    }
 }
 
 .site-description {
     color: var(--diap-color);
 }
 
-
 /* make site-title and site-description invisible when there is a custom logo */
 
-.custom-logo-link+.site-title,
-.custom-logo-link+.site-title+.site-description {
+.custom-logo-link + .site-title,
+.custom-logo-link + .site-title + .site-description {
     display: none;
 }
-
 
 /* optional creation of a hardcoded logo
 

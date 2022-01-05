@@ -1782,16 +1782,20 @@ section.widget a[class^="fngl-sm-"]:hover {
     } */
 }
 
-.site-title {
-  margin: .5rem 0;
+h1.site-title,
+p.site-title {
+  margin: 0.5rem 0;
   padding: 0;
-}
-
-.site-title a,
-.site-title a:visited {
-  color: var(--diap-color);
   font-size: 2rem;
   font-weight: 700;
+  line-height: var(--lh-paragraph);
+}
+
+h1.site-title a,
+h1.site-title a:visited,
+p.site-title a,
+p.site-title a:visited {
+  color: var(--diap-color);
 }
 
 .site-description {
@@ -3014,14 +3018,14 @@ p.has-text-color a {
   */
 }
 
-@media (max-width: 37.45em) {
+@media (max-width: calc($mq-small - $mq-reduction)) {
   .wp-block-column {
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
   }
 }
 
-@media (min-width: 37.5em) and (max-width: 49.95em) {
+@media (min-width: 37.5em) and (max-width: calc($mq-medium - $mq-reduction)) {
   .wp-block-column:not(:only-child) {
     -ms-flex-preferred-size: calc(50% - 1em) !important;
         flex-basis: calc(50% - 1em) !important;

@@ -1476,14 +1476,14 @@ the typographical rhythm is 28px (1.75rem)
   */
 }
 
-@media (max-width: 37.45em) {
+@media (max-width: calc($mq-small - $mq-reduction)) {
   .editor-styles-wrapper .wp-block-column {
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
   }
 }
 
-@media (min-width: 37.5em) and (max-width: 49.95em) {
+@media (min-width: 37.5em) and (max-width: calc($mq-medium - $mq-reduction)) {
   .editor-styles-wrapper .wp-block-column:not(:only-child) {
     -ms-flex-preferred-size: calc(50% - 1em) !important;
         flex-basis: calc(50% - 1em) !important;

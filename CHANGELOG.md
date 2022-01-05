@@ -7,7 +7,7 @@
 ### Changed
 
 -   Gutenberg styles bijgewerkt tot WordPress 5.8.1
--   fngl-recent-posts-shortcode from plugin integrafted in theme
+-   fngl-recent-posts-shortcode from plugin integrated in theme
 
 ### Fixed
 
