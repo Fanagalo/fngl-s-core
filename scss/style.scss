@@ -7,7 +7,7 @@
  Version: 0.79
  License: GNU General Public License v2 or later
  Text Domain: fngl_s-core
-/* 
+*/
 
 /*
   Theme coding based on Underscores
@@ -45,8 +45,7 @@ Future expansions:
   Ground-zero styles (resets, box-sizing, etc.).
 --------------------------------------------------------------*/
 
-@import "3-resets/normalize";
-@import "3-resets/box-sizing";
+@import "3-resets/josh-custom-css-reset";
 
 /*--------------------------------------------------------------
 # 4. HTML Elements
