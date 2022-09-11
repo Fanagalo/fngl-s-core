@@ -4,7 +4,7 @@
  * Shortcode to display overview of pages, posts of CPT using a shortcode
  * 
  * based on "recent posts shortcode" @ https://digwp.com/2018/08/shortcode-display-recent-posts/
- * dependent on fngl_s-core based theme version 0.78 and higher
+ * dependent on fngl-s-core based theme version 0.78 and higher
  * previously a seperate plugin, latest version 0.13
  * 
  * Shortcode [fngl_recent_posts] 

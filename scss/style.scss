@@ -15,7 +15,7 @@
   Inspired by Sami Keijonen wcnordic2019-master theme https://github.com/samikeijonen/wcnordic-2019
 */
 
-@charset "UTF-8";
+@charset "UTF-8"; // this statement is removed when compiling in "compressed" mode
 
 /*--------------------------------------------------------------
 # 1. Global variables (ITCSS settings)
@@ -92,6 +92,7 @@ Future expansions:
 @import "6-styled-components/601-general-components/gallery";
 @import "6-styled-components/601-general-components/page-classes";
 @import "6-styled-components/601-general-components/pagination";
+@import "6-styled-components/601-general-components/width";
 @import "6-styled-components/601-general-components/wp-media";
 // 602. Widgets
 @import "6-styled-components/602-widgets/widget-general";
