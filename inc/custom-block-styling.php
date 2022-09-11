@@ -23,7 +23,7 @@ add_action(
 	'enqueue_block_editor_assets',
 	function() {
 		// Editor styles.
-		wp_enqueue_style( 'fngl_s-core', get_theme_file_uri( 'editor.css' ), null, wp_get_theme()->get( 'Version' ), 'all' );
+		wp_enqueue_style( 'fngl-s-core', get_theme_file_uri( 'editor.css' ), null, wp_get_theme()->get( 'Version' ), 'all' );
 	},
 	10
 );

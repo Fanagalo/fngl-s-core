@@ -7,7 +7,7 @@
  Version: 0.79
  License: GNU General Public License v2 or later
  Text Domain: fngl_s-core
-/* 
+*/
 
 /*
   Theme coding based on Underscores
@@ -15,7 +15,7 @@
   Inspired by Sami Keijonen wcnordic2019-master theme https://github.com/samikeijonen/wcnordic-2019
 */
 
-@charset "UTF-8";
+@charset "UTF-8"; // this statement is removed when compiling in "compressed" mode
 
 /*--------------------------------------------------------------
 # 1. Global variables (ITCSS settings)
@@ -45,8 +45,7 @@ Future expansions:
   Ground-zero styles (resets, box-sizing, etc.).
 --------------------------------------------------------------*/
 
-@import "3-resets/normalize";
-@import "3-resets/box-sizing";
+@import "3-resets/josh-custom-css-reset";
 
 /*--------------------------------------------------------------
 # 4. HTML Elements
@@ -93,6 +92,7 @@ Future expansions:
 @import "6-styled-components/601-general-components/gallery";
 @import "6-styled-components/601-general-components/page-classes";
 @import "6-styled-components/601-general-components/pagination";
+@import "6-styled-components/601-general-components/width";
 @import "6-styled-components/601-general-components/wp-media";
 // 602. Widgets
 @import "6-styled-components/602-widgets/widget-general";

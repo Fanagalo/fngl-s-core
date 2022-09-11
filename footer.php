@@ -17,15 +17,15 @@
 		<div class="footer-rights-acknowledgements">
 		<p>	Copyright <?php echo date("Y"); ?> | Fanagalo<br/>
 
-		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'fngl_s-core' ) ); ?>">
+		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'fngl-s-core' ) ); ?>">
 			<?php
 			/* translators: %s: CMS name, i.e. WordPress. */
-			printf( esc_html__( 'Proudly powered by %s', 'fngl_s-core' ), 'WordPress' );
+			printf( esc_html__( 'Proudly powered by %s', 'fngl-s-core' ), 'WordPress' );
 			?>
 		</a><br/>
 			<?php
 			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Theme: %1$s by %2$s.', 'fngl_s-core' ), 'fngl_s-core', '<a href="https://fanagalo.nl">Jaap Wiering</a>' );
+			printf( esc_html__( 'Theme: %1$s by %2$s.', 'fngl-s-core' ), 'fngl-s-core', '<a href="https://fanagalo.nl">Jaap Wiering</a>' );
 			?></p>
 		</div><!-- .footer-rights-acknowledgements -->
 

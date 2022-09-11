@@ -23,7 +23,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fngl_s-core' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fngl-s-core' ); ?></a>
 
 	<div class="header-full-bg"></div>
 	<header id="masthead" class="header-area">
@@ -50,7 +50,7 @@
 
 	<div class="nav-full-bg"></div>
 	<div class="nav-area">
-		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php _e( 'Main Menu', 'fngl_s-core' ); ?>">
+		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php _e( 'Main Menu', 'fngl-s-core' ); ?>">
 			<?php wp_nav_menu( 
 				array( 
 					'theme_location' => 'primary',

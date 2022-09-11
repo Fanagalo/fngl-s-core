@@ -6,8 +6,10 @@
     --nav-full-bg: var(--fngl-dark-blue);
     --nav-area-bg: var(--fngl-dark-blue);
     /* main content */
-    --main-full-bg: transparent;
-    --main-area-bg: var(--general-bg); // leave as is for editor.css, change value in _colors.scss
+    --main-full-bg: #ff0000;
+    --main-area-bg: var(
+        --general-bg
+    ); // leave as is for editor.css, change value in _colors.scss
     /* sidebar */
     --sidebar-full-bg: var(--fngl-gradient);
     --sidebar-area-bg: transparent;
@@ -38,7 +40,6 @@ body {
     }
 }
 
-
 /* full width backgrounds */
 
 .header-full-bg,
@@ -50,7 +51,6 @@ body {
     grid-column: 1 / -1;
     z-index: -1;
 }
-
 
 /* header */
 
@@ -64,7 +64,6 @@ body {
     background: var(--header-area-bg);
 }
 
-
 /* navigation / menu */
 
 .nav-full-bg {
@@ -76,7 +75,6 @@ body {
     grid-area: nav;
     background: var(--nav-area-bg);
 }
-
 
 /* main */
 
@@ -90,14 +88,13 @@ body {
     grid-area: main;
 }
 
-
 /* sidebar */
 
 .sidebar-full-bg {
     grid-row: 4 / 5;
     background: var(--sidebar-full-bg);
     // the following code is useful for a background image
-    // background: url(images/Fanagalo-logo-RGB.png); 
+    // background: url(images/Fanagalo-logo-RGB.png);
     // background-size: 100%;
 }
 
@@ -105,7 +102,6 @@ body {
     background: var(--sidebar-area-bg);
     grid-area: aside;
 }
-
 
 /* footer */
 

@@ -21,9 +21,9 @@ if ( ! function_exists( 'fngl_s_core_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Healthmasters theme by Fanagalo, use a find and replace
-		 * to change 'fngl_s-core' to the name of your theme in all the template files.
+		 * to change 'fngl-s-core' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'fngl_s-core', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'fngl-s-core', get_template_directory() . '/languages' );
 
 		add_theme_support( 'automatic-feed-links' ); // Add default posts and comments RSS feed links to head.
 	
@@ -39,7 +39,7 @@ if ( ! function_exists( 'fngl_s_core_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'fngl_s-core' ),
+			'primary' => esc_html__( 'Primary', 'fngl-s-core' ),
 		) );
 
 		// Switch default core markup for search form, comment form, and comments to output valid HTML5.
@@ -101,9 +101,9 @@ add_action( 'after_setup_theme', 'fngl_s_core_content_width', 0 );
  */
 function fngl_s_core_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'fngl_s-core' ),
+		'name'          => esc_html__( 'Sidebar', 'fngl-s-core' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'fngl_s-core' ),
+		'description'   => esc_html__( 'Add widgets here.', 'fngl-s-core' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -123,7 +123,7 @@ function fngl_s_core_scripts() {
 		wp_enqueue_script( 'nav-menu.js', get_template_directory_uri() . '/js/nav-menu.js', array('jquery'), '20151111', true );
 
 	// Helps with accessibility for keyboard only users. Original from _s
-		wp_enqueue_script( 'fngl_s-core-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+		wp_enqueue_script( 'fngl-s-core-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	// Makes threads in comments. Original from _s
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
