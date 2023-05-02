@@ -37,7 +37,6 @@
     margin-bottom: 0;
 }
 
-
 /* meta sections */
 
 .article-meta {
@@ -51,15 +50,15 @@
     li {
         background-color: var(--eiklinde-paars);
         display: inline;
-        margin-right: .25rem;
-        padding: 0.125rem .5rem;
+        margin-right: 0.25rem;
+        padding: 0.125rem 0.5rem;
         a {
             text-decoration: none;
             text-transform: uppercase;
             font-size: var(--fs-xs);
             color: var(--diap-color);
             &:hover {
-                opacity: .8;
+                opacity: 0.8;
             }
         }
     }
@@ -75,7 +74,7 @@
     @include small-button;
     background-color: var(--grey-lightest);
     color: var(--paragraph-color);
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     &:hover {
         background-color: var(--grey-light);
         color: var(--diap-color);
@@ -87,34 +86,29 @@
     @include text-width; // TODO: proper solution?
 }
 
-
 /* limit width of article elements */
 
-.article-content> {
-    p,
-    ul,
-    ol,
-    dl {
-        @include paragraph-styling;
-        @include text-width;
-    }
-    /*
-    h1 {
-        @include title-styling
-    }
-    */
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @include heading-styling;
-        @include text-width;
-    }
-    figcaption {
-        @include text-width;
-    }
-    figure {
-        @include figure-width;
-    }
+.article-content > p,
+.article-content > ul,
+.article-content > ol,
+.article-content > dl {
+    @include paragraph-styling;
+    @include text-width;
+}
+// .article-content > h1 {
+//         @include title-styling
+//     }
+.article-content > h2,
+.article-content > h3,
+.article-content > h4,
+.article-content > h5,
+.article-content > h6 {
+    @include heading-styling;
+    @include text-width;
+}
+.article-content > figcaption {
+    @include text-width;
+}
+.article-content > figure {
+    @include figure-width;
 }

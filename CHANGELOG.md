@@ -1,13 +1,18 @@
 # Changelog
 
-## [0.79] - development started 20210914
+## [0.80] - development started 20230428
+
+Design philosophy to keep the parent theme as core as possible and add extra functionality in child theme.
 
 ### Added
 
 ### Changed
 
--   Gutenberg styles bijgewerkt tot WordPress 5.8.1
--   fngl-recent-posts-shortcode from plugin integrated in theme
+-   some includes move from parent to child theme
+
+    -   Google Analytics code moved to child theme and placed with a hook
+
+-   inc for functions.php moved to child theme
 
 ### Fixed
 
@@ -17,11 +22,20 @@
 
 ### Removed
 
+-   legacy CSS resets
+
 ### TODO > search for this keyword
 
 -   alle Font Awesome voor eigen icons vervangen
 -   \_wireframe.scss vaste waarden van breedte flex maken
 -   611-page-templates/\_page.scss"; // should be before \_front-page.scss
+
+## [0.79] - development started 20210914
+
+### Changed
+
+-   Gutenberg styles bijgewerkt tot WordPress 5.8.1
+-   fngl-recent-posts-shortcode from plugin integrated in theme
 
 ## versie 0.78
 
