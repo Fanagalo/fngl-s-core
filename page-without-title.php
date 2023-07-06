@@ -14,7 +14,7 @@ get_header();
 ?>
 
 <div class="main-full-bg"></div>
-<main id="main primary" class="main-area without-page-title">
+<main id="primary" class="main-area without-page-title">
 
 	<?php
 	while ( have_posts() ) :

@@ -26,32 +26,32 @@ Future expansions:
 - spacing        => spacing variables
 - transitions    => transition variables
 --------------------------------------------------------------*/
-/*
+
 @import "1-global-variables/colors";
 @import "1-global-variables/spacing";
 @import "1-global-variables/svg";
 @import "1-global-variables/typography";
 @import "1-global-variables/width";
-*/
+
 /*--------------------------------------------------------------
 # 2. Mixins and functions (ITCSS tools)
   Default mixins and functions
 --------------------------------------------------------------*/
-/*
+
 @import "2-mixins-functions/mixins";
-*/
+
 /*--------------------------------------------------------------
 # 3. Resets (ITCSS generic)
   Ground-zero styles (resets, box-sizing, etc.).
 --------------------------------------------------------------*/
-/*
+
 @import "3-resets/josh-custom-css-reset";
-*/
+
 /*--------------------------------------------------------------
 # 4. HTML Elements
   Unclassed HTML elements (type selectors).
 --------------------------------------------------------------*/
-/*
+
 @import "4-html-elements/html-body";
 @import "4-html-elements/address";
 @import "4-html-elements/blockquote";
@@ -66,7 +66,7 @@ Future expansions:
 @import "4-html-elements/pre-code";
 @import "4-html-elements/tables";
 @import "4-html-elements/obsolete";
-*/
+
 /*--------------------------------------------------------------
 # 5. structure objects (ITCSS objects)
   Objects & Layouts - Undecorated design patterns.
@@ -78,15 +78,15 @@ Future expansions:
 - max-width     => 
 - svg           => 
 --------------------------------------------------------------*/
-/*
+
 @import "5-structure-objects/wireframes";
 @import "5-structure-objects/sidebar";
-*/
+
 /*--------------------------------------------------------------
 # 6. styled components (ITCSS components)
   Components - specific UI components, like: accordions, ...
 --------------------------------------------------------------*/
-/*
+
 // 601. General components
 @import "6-styled-components/601-general-components/article-classes";
 @import "6-styled-components/601-general-components/gallery";
@@ -119,7 +119,7 @@ Future expansions:
 @import "6-styled-components/613-content-parts/content-none";
 @import "6-styled-components/613-content-parts/content-page";
 @import "6-styled-components/613-content-parts/content-search";
-*/
+
 /*--------------------------------------------------------------
 ### 621. Core Blocks - editor related styles.
 
@@ -131,7 +131,7 @@ Reminder: disable loading default CSS with
   wp_dequeue_style( 'wp-block-library-theme' );
 in functions.php
 --------------------------------------------------------------*/
-/*
+
 @import "6-styled-components/621-core-blocks/gutenberg-variables";
 @import "6-styled-components/621-core-blocks/has-background";
 @import "6-styled-components/621-core-blocks/has-color";
@@ -178,11 +178,11 @@ in functions.php
 @import "6-styled-components/621-core-blocks/wp-block-text-columns"; // deprecated in Gutenberg 3.5.0
 @import "6-styled-components/621-core-blocks/wp-block-verse";
 @import "6-styled-components/621-core-blocks/wp-block-video";
-*/
+
 /*--------------------------------------------------------------
 # Custom fngl_s-code styles continued
 --------------------------------------------------------------*/
-/*
+
 // 622. Custom blocks - editor related styles.
 @import "6-styled-components/622-custom-blocks/caption";
 // @import "6-styled-components/622-custom-blocks/columns";
@@ -192,7 +192,7 @@ in functions.php
 // 650. Vendor styles
 @import "6-styled-components/650-vendor/breadcrumb_navxt";
 // @import "6-styled-components/650-vendor/cookie-notice";
-*/
+
 /*--------------------------------------------------------------
 # 7. overrides (ITCSS trumps)
   Utilities - Helpers and overrides.
@@ -209,10 +209,9 @@ Future expansions:
 - spacing                 =>
 - text                    =>
 --------------------------------------------------------------*/
-/*
+
 @import "7-overrides/accessibility";
 @import "7-overrides/align-left-center-right";
 @import "7-overrides/align-wide-full";
 @import "7-overrides/hide-empty-tags";
 @import "7-overrides/hide-full-elements";
-*/

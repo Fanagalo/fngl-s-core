@@ -115,8 +115,8 @@ function fngl_s_core_scripts() {
 add_action( 'wp_enqueue_scripts', 'fngl_s_core_scripts' );
 
 /* Add functions from directory "inc" */ 
-// require get_template_directory() . '/inc/template-tags.php';             // Custom template tags for this theme.
-// require get_template_directory() . '/inc/template-functions.php';        // Functions which enhance the theme by hooking into WordPress.
+require get_template_directory() . '/inc/template-tags.php';             // Custom template tags for this theme.
+require get_template_directory() . '/inc/template-functions.php';        // Functions which enhance the theme by hooking into WordPress.
 // require get_template_directory() . '/inc/custom-header.php';             // Custom Header
 // require get_template_directory() . '/inc/customizer.php';                // Customizer
 // require get_template_directory() . '/inc/custom-block-styling.php';      // Custom styling of the frontend and backend of the block editor 
