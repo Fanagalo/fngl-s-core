@@ -25,7 +25,8 @@ if ( ! function_exists( 'fngl_s_core_setup' ) ) :
 		 */
 		load_theme_textdomain( 'fngl-s-core', get_template_directory() . '/languages' );
 
-		add_theme_support( 'automatic-feed-links' ); // Add default posts and comments RSS feed links to head.
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support( 'automatic-feed-links' ); 
 	
 		// Let WordPress manage the document title.
 		// By adding theme support, we declare that this theme does not use a
